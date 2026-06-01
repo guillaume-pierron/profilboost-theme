@@ -90,7 +90,7 @@ $tav_classes = ['tav-1', 'tav-2', 'tav-3'];
           if ($custom_title) {
             echo nl2br(esc_html($custom_title));
           } else { ?>
-            Concevons les CV<br>qui <span class="accent">captivent</span> les recruteurs
+            Nous concevons les CV<br>qui <span class="accent">captivent</span> les recruteurs
           <?php } ?>
         </h1>
         <p class="hero-subtitle fade-up-3"><?php echo esc_html($hero_subtitle); ?></p>
