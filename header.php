@@ -39,7 +39,7 @@
       $contact_url = get_permalink(get_page_by_path('contact'));
       if (!$contact_url) $contact_url = home_url('/contact');
       ?>
-      <a href="<?php echo esc_url($contact_url); ?>" class="btn btn-primary">Nous contacter</a>
+      <a href="<?php echo esc_url($contact_url); ?>" class="btn btn-primary">Nous contacter <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
