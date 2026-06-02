@@ -46,16 +46,16 @@ function get_cat_info($post_id, $cat_css, $default) {
 <section class="hero hero-inner-page">
   <div class="container">
     <div class="hero-inner" style="text-align:center; position:relative; z-index:1;">
-      <h1 class="hero-title fade-up-2" style="white-space:normal; font-size:clamp(30px,4.5vw,52px);">
+      <h1 class="hero-title fade-up-2" style="white-space:normal; font-size:clamp(30px,4.5vw,52px); margin-bottom:14px;">
         Conseils, guides &amp; <span style="color:#60a5fa;">astuces carrière</span>
       </h1>
-      <p class="hero-subtitle fade-up-3" style="margin:0 auto 32px; max-width:520px;">
+      <p class="hero-subtitle fade-up-3" style="margin:0 auto 20px; max-width:520px;">
         Des articles rédigés par nos experts RH pour vous aider à valoriser votre profil, préparer vos entretiens et booster votre carrière. Gratuitement.
       </p>
 
       <!-- Barre de recherche -->
       <div class="hero-search fade-up-3">
-        <input type="text" placeholder="Rechercher un article, un guide…" id="searchInput" />
+        <input type="text" placeholder="Rechercher un article, un sujet…" id="searchInput" />
         <button type="button" id="searchBtn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
           <span class="search-btn-label">Rechercher</span>

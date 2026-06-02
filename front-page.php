@@ -7,7 +7,7 @@ $tpl = get_template_directory_uri();
 $hero_label    = pb_field('hero_label',    'Experts en optimisation professionnelle');
 $hero_title    = pb_field('hero_title',    'Nous concevons les CV qui captivent les recruteurs');
 $hero_subtitle = pb_field('hero_subtitle', 'Des CV percutants, créés par des experts, qui valorisent votre parcours, passent les filtres ATS et vous ouvrent les portes des entretiens.');
-$hero_cta      = pb_field('hero_cta_text', 'Booster mon profil');
+$hero_cta      = pb_field('hero_cta_text', 'Démarrer mon audit gratuit');
 $hero_stat1    = pb_field('hero_stat_clients', '+500 clients accompagnés');
 $hero_stat2    = pb_field('hero_stat_rating',  '4,9/5 basé sur 200+ avis');
 
@@ -90,7 +90,7 @@ $tav_classes = ['tav-1', 'tav-2', 'tav-3'];
           if ($custom_title) {
             echo nl2br(esc_html($custom_title));
           } else { ?>
-            Nous concevons les CV<br>qui <span class="accent">captivent</span> les recruteurs
+            Boostez votre profil et décrochez<br>le poste que vous <span class="accent">méritez</span>
           <?php } ?>
         </h1>
         <p class="hero-subtitle fade-up-3"><?php echo esc_html($hero_subtitle); ?></p>
@@ -173,46 +173,37 @@ $tav_classes = ['tav-1', 'tav-2', 'tav-3'];
   <div class="container">
 
     <p class="why-label reveal">• Pourquoi choisir ProfilBoost ? •</p>
-    <h2 class="why-title reveal">Un CV, trois avantages<br>qui <span class="why-accent">changent tout.</span></h2>
-    <p class="why-subtitle reveal">Nous créons des CV percutants qui passent les filtres ATS<br>et <strong>séduisent</strong> les recruteurs.</p>
+    <h2 class="why-title reveal">Des résultats concrets,<br>pas des <span class="why-accent">promesses.</span></h2>
+    <p class="why-subtitle reveal">Nos clients le mesurent chaque semaine — voici ce que<br>notre accompagnement change <strong>concrètement</strong>.</p>
 
     <div class="why-grid">
       <?php
       $why_items = [
-        ['icon' => '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',                                              'num' => '01', 'title' => 'Expertise professionnelle',      'desc' => "Des rédacteurs RH certifiés, spécialisés par secteur d'activité.",    'link' => '/service-cv-lm'],
-        ['icon' => '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>', 'num' => '02', 'title' => 'Différenciation et visibilité',  'desc' => "Un CV unique qui vous distingue et renforce votre positionnement.",   'link' => '/service-cv-lm'],
-        ['icon' => '<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>',                                                  'num' => '03', 'title' => 'Gain de temps et de confiance', 'desc' => "On s'occupe de tout, vous gagnez en sérénité et en impact.",         'link' => '/service-coaching'],
+        ['icon' => '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',                                              'stat' => '3x',  'title' => "plus d'entretiens",       'desc' => "Nos clients décrochent en moyenne 3x plus d'entretiens dans les 30 jours suivant leur accompagnement.", 'link' => '/service-cv-lm'],
+        ['icon' => '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>', 'stat' => '+4x', 'title' => "de visibilité LinkedIn",  'desc' => "Un profil LinkedIn optimisé multiplie par 4 les sollicitations de recruteurs en moins d'un mois.",      'link' => '/service-cv-lm'],
+        ['icon' => '<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>',                                                  'stat' => '72h', 'title' => "livraison garantie",        'desc' => "Vos documents prêts en 3 jours ouvrés, avec une garantie satisfait ou remboursé sans conditions.",      'link' => '/service-coaching'],
       ];
       $delays = ['', ' reveal-delay-1', ' reveal-delay-2'];
       foreach ($why_items as $i => $item) : ?>
       <div class="why-card reveal<?php echo $delays[$i]; ?>">
-        <div class="why-num-block">
-          <span class="why-num-text"><?php echo $item['num']; ?></span>
-          <div class="why-num-line"></div>
-        </div>
+        <div class="why-stat"><?php echo esc_html($item['stat']); ?></div>
         <h3><?php echo esc_html($item['title']); ?></h3>
         <p><?php echo esc_html($item['desc']); ?></p>
       </div>
       <?php endforeach; ?>
     </div>
 
-    <!-- Social proof encarts -->
-    <div class="why-proof-cards reveal">
-      <div class="why-proof-card">
-        <div class="why-proof-icon-wrap">
-          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"/></svg>
-        </div>
-        <div class="why-proof-avatars">
-          <div class="why-avatar" style="background:linear-gradient(135deg,#3b82f6,#2563eb)">M</div>
-          <div class="why-avatar" style="background:linear-gradient(135deg,#ec4899,#be185d)">S</div>
-          <div class="why-avatar" style="background:linear-gradient(135deg,#10b981,#059669)">A</div>
-          <div class="why-avatar" style="background:linear-gradient(135deg,#f59e0b,#d97706)">T</div>
-        </div>
-        <span class="why-proof-text">+500 clients accompagnés</span>
+    <!-- Social proof encart unique -->
+    <div class="why-proof-single reveal">
+      <div class="why-proof-half">
+        <div class="why-stat-block-num">+500</div>
+        <div class="why-stat-block-label">clients accompagnés</div>
       </div>
-      <div class="why-proof-card">
-        <span class="why-proof-stars">★★★★★</span>
-        <span class="why-proof-rating">4,9/5 basé sur 200+ avis</span>
+      <div class="why-proof-divider"></div>
+      <div class="why-proof-half">
+        <div class="why-stat-block-stars">★★★★★</div>
+        <div class="why-stat-block-num">4,9/5</div>
+        <div class="why-stat-block-label">basé sur 200+ avis vérifiés</div>
       </div>
     </div>
 
@@ -447,25 +438,21 @@ $recent_posts = get_posts(['numberposts' => 3, 'post_status' => 'publish']);
 </section>
 
 <!-- ───────── CTA BANNER ───────── -->
-<section class="cta-banner">
-  <div class="container">
-    <div class="cta-inner-card">
-      <div class="cta-inner">
-        <div class="cta-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
-          </svg>
-        </div>
-        <div class="cta-text">
-          <h2><?php echo esc_html($cta_title); ?></h2>
-          <p><?php echo esc_html($cta_text); ?></p>
-        </div>
-        <a href="<?php echo $contact_url; ?>" class="btn btn-white">
-          <?php echo esc_html($cta_btn); ?>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
+<section class="cta-banner-fullwidth">
+  <div class="cta-inner">
+    <div class="cta-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+      </svg>
     </div>
+    <div class="cta-text">
+      <h2><?php echo esc_html($cta_title); ?></h2>
+      <p><?php echo esc_html($cta_text); ?></p>
+    </div>
+    <a href="<?php echo $contact_url; ?>" class="btn btn-white">
+      <?php echo esc_html($cta_btn); ?>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
   </div>
 </section>
 

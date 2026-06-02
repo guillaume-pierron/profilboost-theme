@@ -250,7 +250,7 @@ if (empty($timeline)) $timeline = $default_timeline;
 </section>
 
 <!-- ───────── CTA ───────── -->
-<section class="cta-banner" style="padding-bottom:80px;">
+<section class="cta-banner" style="padding-top:80px; padding-bottom:80px;">
   <div class="container">
     <div class="cta-inner-card cta-dark reveal">
       <div class="cta-inner">
