@@ -2,6 +2,22 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
+  /* ── Navbar transparent → scrolled ── */
+  const navbar = document.getElementById('site-navbar');
+  if (navbar) {
+    const onScroll = () => {
+      if (window.scrollY > 50) {
+        navbar.classList.remove('navbar--transparent');
+        navbar.classList.add('navbar--scrolled');
+      } else {
+        navbar.classList.add('navbar--transparent');
+        navbar.classList.remove('navbar--scrolled');
+      }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
   /* ── Scroll reveal ── */
   const revealEls = document.querySelectorAll('.reveal');
   if (revealEls.length) {
@@ -35,13 +51,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   };
 
-  /* ── Navbar shadow on scroll ── */
-  const navbar = document.querySelector('.navbar');
-  if (navbar) {
-    window.addEventListener('scroll', () => {
-      navbar.style.boxShadow = window.scrollY > 20 ? '0 4px 24px rgba(0,0,0,.25)' : 'none';
-    });
-  }
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') window.closeMenu();
+  });
 
   /* ── FAQ accordion ── */
   document.querySelectorAll('.faq-question').forEach(btn => {
