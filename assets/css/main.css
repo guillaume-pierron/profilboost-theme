@@ -1436,10 +1436,21 @@ textarea.form-input { resize: vertical; min-height: 130px; }
 .pb-grad .stat-value,
 .pb-grad .why-label,
 .pb-grad .why-accent,
-.pb-grad .why-stat,
 .pb-grad .why-stat-block-num,
 .pb-grad .svc-card-link,
 .pb-grad .service-feature-card-icon svg {
+  background: linear-gradient(135deg, #4cbdfa 0%, #058ed9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.pb-grad .why-stat {
+  background: linear-gradient(160deg, #0E131F 0%, #394E7F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.pb-grad .why-card h3 {
   background: linear-gradient(135deg, #4cbdfa 0%, #058ed9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
