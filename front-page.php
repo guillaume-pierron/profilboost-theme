@@ -43,7 +43,7 @@ $default_steps = [
     ['title' => 'Audit gratuit',         'desc' => 'Un échange de 30 minutes pour analyser votre profil, vos objectifs et définir la meilleure stratégie.'],
     ['title' => 'Création sur-mesure',   'desc' => 'Nos experts rédigent et optimisent vos documents selon votre secteur et vos ambitions.'],
     ['title' => 'Révision & ajustements','desc' => "Nous affinons ensemble jusqu'à votre satisfaction complète."],
-    ['title' => 'Décrochez vos entretiens', 'desc' => "Vous postulez avec confiance, armé d'un profil optimisé."],
+    ['title' => 'Décrochez vos entretiens', 'desc' => "Vous postulez avec confiance et nous restons à vos côtés."],
 ];
 $hiw_steps = [];
 if (function_exists('have_rows') && have_rows('hiw_steps')) {
@@ -54,7 +54,7 @@ if (empty($hiw_steps)) $hiw_steps = $default_steps;
 /* Plus items defaults */
 $default_plus = [
     ['title' => 'Paiement en 4 fois',      'desc' => 'Payez en plusieurs fois sans frais.'],
-    ['title' => 'Livraison en 72h',         'desc' => "Des délais rapides pour ne pas rater vos opportunités."],
+    ['title' => 'Livraison en 72h',         'desc' => "Vos documents prêts en 3 jours ouvrés."],
     ['title' => 'Satisfait ou remboursé',   'desc' => 'Votre satisfaction est notre priorité absolue.'],
 ];
 $plus_items = [];
@@ -282,57 +282,51 @@ $tav_classes = ['tav-1', 'tav-2', 'tav-3'];
   </div>
 </section>
 
-<!-- ───────── HOW IT WORKS ───────── -->
+<!-- ───────── HOW IT WORKS + LES PLUS ───────── -->
 <section class="hiw-section">
   <div class="container">
-    <div class="reveal">
-      <p class="section-label">Notre méthode</p>
-      <h2 class="section-title">Comment ça <span class="underline-blue">marche</span> ?</h2>
-      <p class="section-subtitle">Un processus simple et transparent pour transformer votre profil en 4 étapes.</p>
-    </div>
-    <div class="hiw-steps">
-      <div class="hiw-connector"></div>
-      <?php
-      $delays = ['', ' reveal-delay-1', ' reveal-delay-2', ' reveal-delay-3'];
-      foreach ($hiw_steps as $i => $step) :
-      ?>
-      <div class="hiw-step reveal<?php echo $delays[$i % 4]; ?>">
-        <div class="hiw-num"><?php echo ($i + 1); ?></div>
-        <h3 class="hiw-step-title"><?php echo esc_html($step['title']); ?></h3>
-        <p class="hiw-step-desc"><?php echo esc_html($step['desc']); ?></p>
-      </div>
-      <?php endforeach; ?>
-    </div>
-  </div>
-</section>
+    <div class="hiw-plus-grid">
 
-<!-- ───────── LES PLUS ───────── -->
-<section class="plus-section">
-  <div class="container">
-    <div class="plus-inner-card" style="background: linear-gradient(140deg, rgba(10,22,40,.82) 0%, rgba(13,30,68,.78) 60%, rgba(14,32,80,.85) 100%), url('<?php echo $plus_bg; ?>') center/cover no-repeat;">
-      <div class="plus-header reveal">
-        <h2 class="plus-title">Les <span class="plus-accent">+</span> de ProfilBoost</h2>
-        <p class="plus-subtitle">Un accompagnement complet pour maximiser vos chances de décrocher le poste que vous visez.</p>
+      <!-- Gauche : Notre méthode -->
+      <div class="hiw-left reveal">
+        <p class="section-label hiw-label">Notre méthode</p>
+        <h2 class="hiw-main-title">Un processus simple,<br>une transformation garantie</h2>
+        <div class="hiw-steps">
+          <div class="hiw-connector"></div>
+          <?php
+          $hiw_colors = ['hiw-num-1', 'hiw-num-2', 'hiw-num-3', 'hiw-num-4'];
+          foreach ($hiw_steps as $i => $step) : ?>
+          <div class="hiw-step">
+            <div class="hiw-num <?php echo $hiw_colors[$i % 4]; ?>"><?php echo ($i + 1); ?></div>
+            <h3 class="hiw-step-title"><?php echo esc_html($step['title']); ?></h3>
+            <p class="hiw-step-desc"><?php echo esc_html($step['desc']); ?></p>
+          </div>
+          <?php endforeach; ?>
+        </div>
       </div>
-      <div class="plus-cards">
+
+      <!-- Droite : Les + -->
+      <div class="hiw-plus-card reveal reveal-delay-2">
+        <h3 class="hiw-plus-card-title">Les + de ProfilBoost</h3>
         <?php
         $plus_icons = [
-          '<path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>',
+          '<rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/>',
           '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',
           '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/>',
         ];
         foreach ($plus_items as $i => $item) : ?>
-        <div class="plus-card reveal<?php echo $i > 0 ? ' reveal-delay-' . $i : ''; ?>">
-          <div class="plus-card-icon">
+        <div class="hiw-plus-item">
+          <div class="hiw-plus-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><?php echo $plus_icons[$i % 3]; ?></svg>
           </div>
-          <div>
-            <h3><?php echo esc_html($item['title']); ?></h3>
+          <div class="hiw-plus-text">
+            <h4><?php echo esc_html($item['title']); ?></h4>
             <p><?php echo esc_html($item['desc']); ?></p>
           </div>
         </div>
         <?php endforeach; ?>
       </div>
+
     </div>
   </div>
 </section>
