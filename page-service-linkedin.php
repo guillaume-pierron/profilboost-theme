@@ -2,17 +2,10 @@
 <?php $contact_url = esc_url(home_url('/contact')); ?>
 
 <!-- ───────── HERO ───────── -->
-<section class="hero" style="padding: 52px 0 80px;">
+<section class="hero" style="padding: 140px 0 80px;">
   <div class="container">
     <div class="hero-inner">
       <div class="hero-content">
-        <div class="breadcrumb">
-          <a href="<?php echo esc_url(home_url('/')); ?>">Accueil</a>
-          <span class="breadcrumb-sep">›</span>
-          <a href="<?php echo esc_url(home_url('/formules')); ?>">Formules</a>
-          <span class="breadcrumb-sep">›</span>
-          <span class="breadcrumb-current">LinkedIn</span>
-        </div>
         <p class="hero-label fade-up">Service N°2</p>
         <h1 class="hero-title fade-up-2">Optimisation du<br>Profil <span style="color:#38bdf8;">LinkedIn</span></h1>
         <p class="hero-subtitle fade-up-3">Un profil LinkedIn optimisé pour renforcer votre e-réputation, être visible des recruteurs et attirer les bonnes opportunités.</p>
@@ -249,14 +242,14 @@
 <!-- ───────── STATS ───────── -->
 <section class="service-why-section">
   <div class="container">
-    <div class="reveal" style="text-align:center;"><h2 class="section-title">Pourquoi choisir <span class="underline-blue">ProfilBoost</span> ?</h2></div>
+    <div class="reveal" style="text-align:center;"><h2 class="section-title">Ce qui transforme votre <span class="underline-blue">profil LinkedIn</span></h2></div>
     <div class="stats-grid">
       <?php
       $stats = [
-        ['icon' => '<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/>', 'value' => "Spécialistes\nLinkedIn", 'label' => 'Experts en personal branding et stratégie de visibilité'],
-        ['icon' => '<polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>',       'value' => "Résultats\nprouvés",     'label' => "Des profils optimisés qui génèrent plus de vues et d'opportunités"],
-        ['icon' => '<path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/>',         'value' => "Approche\npersonnalisée",'label' => 'Un accompagnement sur-mesure adapté à vos objectifs'],
-        ['icon' => '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',                                    'value' => "Confidentialité\ngarantie",  'label' => 'Vos données sont 100% sécurisées et confidentielles'],
+        ['icon' => '<polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>',       'value' => '+4x',   'label' => 'Visibilité LinkedIn accrue'],
+        ['icon' => '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>', 'value' => '4,9/5', 'label' => 'Note moyenne sur 200+ avis'],
+        ['icon' => '<path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>',   'value' => '+500',  'label' => 'Profils LinkedIn optimisés'],
+        ['icon' => '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',                       'value' => '48h',   'label' => 'Livraison garantie'],
       ];
       foreach ($stats as $i => $s) : ?>
       <div class="stat-card reveal<?php echo $i > 0 ? ' reveal-delay-' . min($i,3) : ''; ?>">
@@ -272,19 +265,18 @@
 </section>
 
 <!-- ───────── CTA ───────── -->
-<section style="padding: 0 0 90px;">
-  <div class="container">
-    <div class="cta-inner-card cta-dark reveal">
-      <div class="cta-inner">
-        <div class="cta-logo-icon">
-          <svg viewBox="0 0 24 24" fill="white" width="32" height="32"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </div>
-        <div class="cta-text">
-          <h2>Prêt à booster votre visibilité sur LinkedIn ?</h2>
-          <p>Optimisons votre profil pour attirer les bonnes opportunités et accélérer votre carrière.</p>
-        </div>
-        <a href="<?php echo $contact_url; ?>" class="btn btn-white">Optimiser mon profil LinkedIn <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-      </div>
+<section class="cta-banner-fullwidth">
+  <div class="cta-inner" style="max-width:1140px; margin:0 auto;">
+    <div class="cta-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"/></svg>
+    </div>
+    <div class="cta-text">
+      <h2>Prêt à booster votre visibilité sur LinkedIn ?</h2>
+      <p>Optimisons votre profil pour attirer les bonnes opportunités et accélérer votre carrière.</p>
+    </div>
+    <div style="display:flex; flex-direction:column; align-items:flex-start; gap:10px; flex-shrink:0;">
+      <a href="<?php echo $contact_url; ?>" class="btn btn-white">Optimiser mon profil LinkedIn <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="<?php echo esc_url(home_url('/formules')); ?>" style="font-size:13px; color:rgba(255,255,255,.65); text-decoration:none; text-align:center; width:100%;">Voir toutes les formules →</a>
     </div>
   </div>
 </section>

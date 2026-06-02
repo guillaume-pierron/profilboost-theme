@@ -307,16 +307,16 @@ function get_cat_info($post_id, $cat_css, $default) {
 </section>
 
 <!-- ───────── CTA ───────── -->
-<section style="padding: 80px 0 0;">
-  <div class="cta-inner-card" style="border-radius:0; background: linear-gradient(140deg, #1a3eb8 0%, #1d4ed8 50%, #2563eb 100%); padding: 64px 0; position:relative; overflow:hidden;">
-    <div class="cta-inner" style="max-width:1140px; margin:0 auto; padding:0 24px;">
-      <div class="cta-logo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"/></svg></div>
-      <div class="cta-text">
-        <h2>Prêt à passer à l'action ?</h2>
-        <p>Les conseils c'est bien — être accompagné par un expert, c'est encore mieux.</p>
-      </div>
-      <a href="<?php echo $formules_url; ?>" class="btn btn-white">Voir nos formules<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+<section class="cta-banner-fullwidth">
+  <div class="cta-inner" style="max-width:1140px; margin:0 auto;">
+    <div class="cta-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"/></svg>
     </div>
+    <div class="cta-text">
+      <h2>Prêt à passer à l'action ?</h2>
+      <p>Les conseils c'est bien — être accompagné par un expert, c'est encore mieux.</p>
+    </div>
+    <a href="<?php echo $formules_url; ?>" class="btn btn-white">Voir nos formules <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
   </div>
 </section>
 

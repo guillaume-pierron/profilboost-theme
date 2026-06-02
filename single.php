@@ -53,13 +53,6 @@
 <section class="article-hero" style="background: linear-gradient(160deg, rgba(5,13,32,.92), rgba(13,27,62,.88), rgba(10,36,96,.85)), url('<?php echo esc_url($thumb); ?>') center/cover no-repeat;">
   <div class="container">
     <div class="article-hero-inner">
-      <nav class="article-breadcrumb">
-        <a href="<?php echo esc_url(home_url('/')); ?>">Accueil</a>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
-        <a href="<?php echo $ressources_url; ?>">Ressources</a>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
-        <span><?php echo esc_html($cat_name); ?></span>
-      </nav>
 
       <div class="article-cat-pill">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>

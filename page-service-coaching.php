@@ -2,17 +2,10 @@
 <?php $contact_url = esc_url(home_url('/contact')); ?>
 
 <!-- ───────── HERO ───────── -->
-<section class="hero" style="padding: 52px 0 80px;">
+<section class="hero" style="padding: 140px 0 80px;">
   <div class="container">
     <div class="hero-inner">
       <div class="hero-content">
-        <div class="breadcrumb">
-          <a href="<?php echo esc_url(home_url('/')); ?>">Accueil</a>
-          <span class="breadcrumb-sep">›</span>
-          <a href="<?php echo esc_url(home_url('/formules')); ?>">Formules</a>
-          <span class="breadcrumb-sep">›</span>
-          <span class="breadcrumb-current">Coaching</span>
-        </div>
         <p class="hero-label fade-up">Service N°3</p>
         <h1 class="hero-title fade-up-2">Coaching &amp;<br>Préparation <span style="color:var(--blue-light);">entretien</span></h1>
         <p class="hero-subtitle fade-up-3">Entraînez-vous en conditions réelles avec un coach expert et abordez vos entretiens avec la confiance et les techniques qui font la différence.</p>
@@ -278,14 +271,14 @@
 <!-- ───────── STATS ───────── -->
 <section class="service-why-section">
   <div class="container">
-    <div class="reveal" style="text-align:center;"><h2 class="section-title">Pourquoi choisir <span class="underline-blue">ProfilBoost</span> ?</h2></div>
+    <div class="reveal" style="text-align:center;"><h2 class="section-title">Pourquoi nos coachings <span class="underline-blue">font la différence</span> ?</h2></div>
     <div class="stats-grid">
       <?php
       $stats = [
-        ['icon' => '<circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>',           'value' => "Coachs\ncertifiés",      'label' => 'Experts en recrutement, RH et développement personnel'],
-        ['icon' => '<polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>',        'value' => "×3 plus\nde succès",     'label' => 'Nos clients décrochent 3x plus d\'offres après coaching'],
-        ['icon' => '<rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>', 'value' => "Flexibilité\ntotale",    'label' => 'Séances en visio ou présentiel, aux horaires qui vous conviennent'],
-        ['icon' => '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',                         'value' => "Résultats\ndès J+1",      'label' => 'Des progrès visibles et actionnables dès la première séance'],
+        ['icon' => '<circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>',           'value' => 'Coachs certifiés',   'label' => 'Spécialistes RH et développement'],
+        ['icon' => '<polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>',        'value' => '×3 d\'entretiens',   'label' => 'En moyenne après nos coachings'],
+        ['icon' => '<rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>', 'value' => 'Flexibilité totale', 'label' => 'Visio ou présentiel, vos horaires'],
+        ['icon' => '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',                         'value' => '1ère séance',        'label' => 'Des résultats concrets dès J+1'],
       ];
       foreach ($stats as $i => $s) : ?>
       <div class="stat-card reveal<?php echo $i > 0 ? ' reveal-delay-' . min($i,3) : ''; ?>">
@@ -301,19 +294,18 @@
 </section>
 
 <!-- ───────── CTA ───────── -->
-<section style="padding: 0 0 90px;">
-  <div class="container">
-    <div class="cta-inner-card cta-dark reveal">
-      <div class="cta-inner">
-        <div class="cta-logo-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
-        </div>
-        <div class="cta-text">
-          <h2>Prêt à décrocher votre prochain poste ?</h2>
-          <p>Entraînez-vous avec nos coachs experts et présentez-vous à vos entretiens avec la confiance et les techniques qui font la différence.</p>
-        </div>
-        <a href="<?php echo $contact_url; ?>" class="btn btn-white">Réserver mon coaching <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-      </div>
+<section class="cta-banner-fullwidth">
+  <div class="cta-inner" style="max-width:1140px; margin:0 auto;">
+    <div class="cta-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"/></svg>
+    </div>
+    <div class="cta-text">
+      <h2>Prêt à décrocher votre prochain poste ?</h2>
+      <p>Entraînez-vous avec nos coachs experts et présentez-vous à vos entretiens avec la confiance et les techniques qui font la différence.</p>
+    </div>
+    <div style="display:flex; flex-direction:column; align-items:flex-start; gap:10px; flex-shrink:0;">
+      <a href="<?php echo $contact_url; ?>" class="btn btn-white">Réserver mon coaching <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="<?php echo esc_url(home_url('/formules')); ?>" style="font-size:13px; color:rgba(255,255,255,.65); text-decoration:none; text-align:center; width:100%;">Voir toutes les formules →</a>
     </div>
   </div>
 </section>

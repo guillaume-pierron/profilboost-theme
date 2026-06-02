@@ -61,27 +61,43 @@ class ProfilBoost_Walker_Mobile extends Walker_Nav_Menu {
 
 /* ─── FALLBACK MENUS ────────────────────────────────────── */
 function profilboost_fallback_menu() {
+    $uri = rtrim($_SERVER['REQUEST_URI'], '/');
+    // Accueil
+    $active = ($uri === parse_url(home_url('/'), PHP_URL_PATH)) ? ' class="active"' : '';
+    echo '<li><a href="' . esc_url(home_url('/')) . '"' . $active . '>Accueil</a></li>';
+    // Services dropdown
+    $svc_paths = ['/service-cv-lm', '/service-linkedin', '/service-coaching'];
+    $svc_active = '';
+    foreach ($svc_paths as $p) { if (strpos($uri, $p) !== false) { $svc_active = ' class="active"'; break; } }
+    echo '<li class="nav-has-dropdown">';
+    echo '<a href="#"' . $svc_active . ' class="nav-dropdown-toggle">Services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></a>';
+    echo '<div class="nav-dropdown"><div class="nav-dropdown-inner">';
+    echo '<a href="' . esc_url(home_url('/service-cv-lm')) . '"><span class="nav-dropdown-icon">📄</span>CV &amp; Lettre de motivation</a>';
+    echo '<a href="' . esc_url(home_url('/service-linkedin')) . '"><span class="nav-dropdown-icon">💼</span>Profil LinkedIn</a>';
+    echo '<a href="' . esc_url(home_url('/service-coaching')) . '"><span class="nav-dropdown-icon">🎯</span>Coaching entretien</a>';
+    echo '</div></div></li>';
+    // Autres pages
     $pages = [
-        home_url('/') => 'Accueil',
         home_url('/formules') => 'Formules',
         home_url('/about') => 'Qui sommes-nous',
-        home_url('/ressources') => 'Ressources',
+        home_url('/ressources') => 'Blog',
     ];
     foreach ($pages as $url => $label) {
-        $active = (rtrim($_SERVER['REQUEST_URI'], '/') === parse_url($url, PHP_URL_PATH)) ? ' class="active"' : '';
+        $active = ($uri === parse_url($url, PHP_URL_PATH)) ? ' class="active"' : '';
         echo '<li><a href="' . esc_url($url) . '"' . $active . '>' . esc_html($label) . '</a></li>';
     }
 }
 function profilboost_fallback_mobile_menu() {
-    $pages = [
-        home_url('/') => 'Accueil',
-        home_url('/formules') => 'Formules',
-        home_url('/about') => 'Qui sommes-nous',
-        home_url('/ressources') => 'Ressources',
-    ];
-    foreach ($pages as $url => $label) {
-        echo '<a href="' . esc_url($url) . '" onclick="closeMenu()">' . esc_html($label) . '</a>';
-    }
+    echo '<a href="' . esc_url(home_url('/')) . '" onclick="closeMenu()">Accueil</a>';
+    echo '<button class="mobile-services-toggle" onclick="toggleMobileServices(this)" type="button">Services <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>';
+    echo '<div class="mobile-services-sub">';
+    echo '<a href="' . esc_url(home_url('/service-cv-lm')) . '" onclick="closeMenu()">📄 CV &amp; Lettre de motivation</a>';
+    echo '<a href="' . esc_url(home_url('/service-linkedin')) . '" onclick="closeMenu()">💼 Profil LinkedIn</a>';
+    echo '<a href="' . esc_url(home_url('/service-coaching')) . '" onclick="closeMenu()">🎯 Coaching entretien</a>';
+    echo '</div>';
+    echo '<a href="' . esc_url(home_url('/formules')) . '" onclick="closeMenu()">Formules</a>';
+    echo '<a href="' . esc_url(home_url('/about')) . '" onclick="closeMenu()">Qui sommes-nous</a>';
+    echo '<a href="' . esc_url(home_url('/ressources')) . '" onclick="closeMenu()">Blog</a>';
 }
 
 /* ─── ACF OPTIONS PAGE ──────────────────────────────────── */

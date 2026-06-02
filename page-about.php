@@ -250,20 +250,16 @@ if (empty($timeline)) $timeline = $default_timeline;
 </section>
 
 <!-- ───────── CTA ───────── -->
-<section class="cta-banner" style="padding-top:80px; padding-bottom:80px;">
-  <div class="container">
-    <div class="cta-inner-card cta-dark reveal">
-      <div class="cta-inner">
-        <div class="cta-logo-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-        </div>
-        <div class="cta-text">
-          <h2>Prêt à écrire la suite de votre histoire ?</h2>
-          <p>Notre équipe est là pour vous accompagner à chaque étape de votre parcours professionnel.</p>
-        </div>
-        <a href="<?php echo $contact_url; ?>" class="btn btn-white">Nous contacter<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-      </div>
+<section class="cta-banner-fullwidth">
+  <div class="cta-inner" style="max-width:1140px; margin:0 auto;">
+    <div class="cta-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
     </div>
+    <div class="cta-text">
+      <h2>Prêt à écrire la suite de votre histoire ?</h2>
+      <p>Notre équipe est là pour vous accompagner à chaque étape de votre parcours professionnel.</p>
+    </div>
+    <a href="<?php echo $contact_url; ?>" class="btn btn-white">Nous contacter <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
   </div>
 </section>
 

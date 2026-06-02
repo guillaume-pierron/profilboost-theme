@@ -4,7 +4,7 @@
 $hero_title    = pb_field('hero_title',    'Choisissez votre formule de succès');
 $hero_subtitle = pb_field('hero_subtitle', "Des prestations sur mesure pour valoriser votre profil, séduire les recruteurs et décrocher le poste que vous méritez.");
 
-$price_cv       = pb_field('price_cv',       '89');
+$price_cv       = pb_field('price_cv',       '79');
 $price_li       = pb_field('price_li',       '69');
 $price_coaching = pb_field('price_coaching', '99');
 
@@ -59,11 +59,6 @@ if (empty($testimonials)) $testimonials = $default_testi;
 <section class="hero hero-inner-page">
   <div class="container">
     <div style="text-align:center; position:relative; z-index:1;">
-      <div class="breadcrumb">
-        <a href="<?php echo esc_url(home_url('/')); ?>">Accueil</a>
-        <span class="breadcrumb-sep">›</span>
-        <span class="breadcrumb-current">Formules</span>
-      </div>
       <h1 class="hero-title fade-up-2" style="white-space:normal; font-size:clamp(32px,5vw,56px);"><?php echo esc_html($hero_title); ?></h1>
       <p class="hero-subtitle fade-up-3" style="margin:0 auto 40px; max-width:560px;"><?php echo esc_html($hero_subtitle); ?></p>
       <div class="hero-stats fade-up-4">
@@ -90,7 +85,7 @@ if (empty($testimonials)) $testimonials = $default_testi;
       <!-- CV & LM -->
       <div class="pricing-card reveal">
         <div class="pricing-head" style="background: linear-gradient(145deg, rgba(10,22,40,.72) 0%, rgba(30,64,175,.60) 100%), url('<?php echo $svc_img_cv; ?>') center/cover no-repeat;">
-          <div class="pricing-service-num">Service N°1</div>
+          <div class="pricing-service-num">CV &amp; Lettre de motivation</div>
           <div class="pricing-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
           </div>
@@ -98,15 +93,31 @@ if (empty($testimonials)) $testimonials = $default_testi;
           <div class="pricing-price"><span class="price-from">À partir de</span><span class="price-amount"><?php echo esc_html($price_cv); ?></span><span class="price-currency">€</span></div>
         </div>
         <div class="pricing-body">
-          <p class="pricing-desc">Un CV percutant et une lettre de motivation sur mesure, rédigés par un expert RH pour passer les filtres ATS et retenir l'attention des recruteurs.</p>
-          <ul class="pricing-features">
-            <?php foreach (['CV rédigé par un expert RH', 'Design professionnel sur mesure', 'Optimisation ATS garantie', 'Lettre de motivation incluse', 'Révisions illimitées', 'Livraison PDF & Word sous 72h'] as $f) : ?>
-            <li class="feat-in"><span class="feat-dot-in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><?php echo esc_html($f); ?></li>
-            <?php endforeach; ?>
-            <?php foreach (['Optimisation profil LinkedIn', "Simulation d'entretien"] as $f) : ?>
-            <li class="feat-out"><span class="feat-dot-out"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><?php echo esc_html($f); ?></li>
-            <?php endforeach; ?>
-          </ul>
+          <p class="pricing-desc">Rédigé par un expert RH, optimisé ATS, livré en 72h avec révisions illimitées.</p>
+          <div class="pricing-tiers">
+            <div class="pricing-tier">
+              <div class="pricing-tier-price">79€</div>
+              <div class="pricing-tier-info">
+                <div class="pricing-tier-name">CV Seul</div>
+                <div class="pricing-tier-includes">Design pro · ATS · Révisions illimitées</div>
+              </div>
+            </div>
+            <div class="pricing-tier pricing-tier-highlight">
+              <span class="pricing-tier-badge">Recommandé</span>
+              <div class="pricing-tier-price">99€</div>
+              <div class="pricing-tier-info">
+                <div class="pricing-tier-name">CV + Lettre de motivation</div>
+                <div class="pricing-tier-includes">CV + LM · ATS · Révisions · PDF & Word</div>
+              </div>
+            </div>
+            <div class="pricing-tier">
+              <div class="pricing-tier-price">129€</div>
+              <div class="pricing-tier-info">
+                <div class="pricing-tier-name">CV Express</div>
+                <div class="pricing-tier-includes">CV + LM · Livraison 48h · Prioritaire</div>
+              </div>
+            </div>
+          </div>
           <a href="<?php echo $cv_url; ?>" class="pricing-cta-outline">Découvrir le service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           <a href="<?php echo $contact_url; ?>" class="pricing-cta-detail">Demander un devis gratuit</a>
         </div>
@@ -116,21 +127,37 @@ if (empty($testimonials)) $testimonials = $default_testi;
       <div class="pricing-card featured reveal reveal-delay-1">
         <div class="featured-badge">Le plus populaire</div>
         <div class="pricing-head" style="background: linear-gradient(145deg, rgba(0,40,85,.72) 0%, rgba(10,102,194,.60) 100%), url('<?php echo $svc_img_li; ?>') center/cover no-repeat;">
-          <div class="pricing-service-num">Service N°2</div>
+          <div class="pricing-service-num">Profil LinkedIn</div>
           <div class="pricing-icon"><svg viewBox="0 0 24 24" fill="white"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
           <div class="pricing-title">Optimisation du<br>Profil LinkedIn</div>
           <div class="pricing-price"><span class="price-from">À partir de</span><span class="price-amount"><?php echo esc_html($price_li); ?></span><span class="price-currency">€</span></div>
         </div>
         <div class="pricing-body">
-          <p class="pricing-desc">Un profil LinkedIn 100% optimisé pour attirer les recruteurs, renforcer votre e-réputation et multiplier vos opportunités professionnelles.</p>
-          <ul class="pricing-features">
-            <?php foreach (['Audit complet de votre profil', 'Titre & résumé optimisés', 'Stratégie de mots-clés SEO', 'Recommandations & compétences', 'Conseils stratégie réseau', 'Modifications appliquées sous 72h'] as $f) : ?>
-            <li class="feat-in"><span class="feat-dot-in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><?php echo esc_html($f); ?></li>
-            <?php endforeach; ?>
-            <?php foreach (['Création de CV', "Simulation d'entretien"] as $f) : ?>
-            <li class="feat-out"><span class="feat-dot-out"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><?php echo esc_html($f); ?></li>
-            <?php endforeach; ?>
-          </ul>
+          <p class="pricing-desc">Audit, optimisation complète et stratégie SEO pour multiplier vos opportunités.</p>
+          <div class="pricing-tiers">
+            <div class="pricing-tier">
+              <div class="pricing-tier-price">69€</div>
+              <div class="pricing-tier-info">
+                <div class="pricing-tier-name">Standard</div>
+                <div class="pricing-tier-includes">Titre · Résumé · Compétences · ATS</div>
+              </div>
+            </div>
+            <div class="pricing-tier pricing-tier-highlight">
+              <span class="pricing-tier-badge">Recommandé</span>
+              <div class="pricing-tier-price">99€</div>
+              <div class="pricing-tier-info">
+                <div class="pricing-tier-name">Premium</div>
+                <div class="pricing-tier-includes">Standard + Bannière · Stratégie réseau · Suivi</div>
+              </div>
+            </div>
+            <div class="pricing-tier">
+              <div class="pricing-tier-price">149€</div>
+              <div class="pricing-tier-info">
+                <div class="pricing-tier-name">Expert</div>
+                <div class="pricing-tier-includes">Premium + Posts rédigés · Suivi 30 jours</div>
+              </div>
+            </div>
+          </div>
           <a href="<?php echo $li_url; ?>" class="pricing-cta-primary">Découvrir le service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           <a href="<?php echo $contact_url; ?>" class="pricing-cta-detail">Demander un devis gratuit</a>
         </div>
@@ -139,21 +166,37 @@ if (empty($testimonials)) $testimonials = $default_testi;
       <!-- Coaching -->
       <div class="pricing-card reveal reveal-delay-2">
         <div class="pricing-head" style="background: linear-gradient(145deg, rgba(26,10,42,.72) 0%, rgba(109,40,217,.60) 100%), url('<?php echo $svc_img_coaching; ?>') center/cover no-repeat;">
-          <div class="pricing-service-num">Service N°3</div>
+          <div class="pricing-service-num">Coaching entretien</div>
           <div class="pricing-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
           <div class="pricing-title">Coaching &amp;<br>Préparation entretien</div>
           <div class="pricing-price"><span class="price-from">À partir de</span><span class="price-amount"><?php echo esc_html($price_coaching); ?></span><span class="price-currency">€</span></div>
         </div>
         <div class="pricing-body">
-          <p class="pricing-desc">Des sessions de coaching personnalisées pour maîtriser vos entretiens, gagner en confiance et décrocher le poste que vous visez.</p>
-          <ul class="pricing-features">
-            <?php foreach (["Simulation d'entretien réel", 'Méthode STAR appliquée', 'Débriefing personnalisé', 'Rapport de coaching PDF', 'Suivi post-session inclus', 'Visioconférence ou présentiel'] as $f) : ?>
-            <li class="feat-in"><span class="feat-dot-in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><?php echo esc_html($f); ?></li>
-            <?php endforeach; ?>
-            <?php foreach (['Création de CV', 'Optimisation profil LinkedIn'] as $f) : ?>
-            <li class="feat-out"><span class="feat-dot-out"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span><?php echo esc_html($f); ?></li>
-            <?php endforeach; ?>
-          </ul>
+          <p class="pricing-desc">Simulation réelle, méthode STAR et débriefing pour décrocher avec confiance.</p>
+          <div class="pricing-tiers">
+            <div class="pricing-tier">
+              <div class="pricing-tier-price">99€</div>
+              <div class="pricing-tier-info">
+                <div class="pricing-tier-name">Session Découverte</div>
+                <div class="pricing-tier-includes">1h · Simulation + débriefing</div>
+              </div>
+            </div>
+            <div class="pricing-tier pricing-tier-highlight">
+              <span class="pricing-tier-badge">Recommandé</span>
+              <div class="pricing-tier-price">179€</div>
+              <div class="pricing-tier-info">
+                <div class="pricing-tier-name">Pack Intensif</div>
+                <div class="pricing-tier-includes">2h · 2 simulations · Rapport PDF</div>
+              </div>
+            </div>
+            <div class="pricing-tier">
+              <div class="pricing-tier-price">249€</div>
+              <div class="pricing-tier-info">
+                <div class="pricing-tier-name">Pack Complet</div>
+                <div class="pricing-tier-includes">3h · 3 sessions · Suivi 30 jours</div>
+              </div>
+            </div>
+          </div>
           <a href="<?php echo $coaching_url; ?>" class="pricing-cta-outline">Découvrir le service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           <a href="<?php echo $contact_url; ?>" class="pricing-cta-detail">Demander un devis gratuit</a>
         </div>
@@ -163,55 +206,87 @@ if (empty($testimonials)) $testimonials = $default_testi;
   </div>
 </section>
 
-<!-- ───────── TABLEAU COMPARATIF ───────── -->
+<!-- ───────── PACK COMBINÉ ───────── -->
+<section style="padding: 0 0 80px;">
+  <div class="container">
+    <div class="reveal" style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #1d4ed8 100%); border-radius: 24px; padding: 48px 56px; position:relative; overflow:hidden;">
+      <div style="position:absolute; top:-40px; right:-40px; width:200px; height:200px; border-radius:50%; background:rgba(255,255,255,.04);"></div>
+      <div style="position:absolute; bottom:-60px; left:-20px; width:160px; height:160px; border-radius:50%; background:rgba(255,255,255,.03);"></div>
+      <div style="position:relative; z-index:1; display:flex; align-items:center; justify-content:space-between; gap:40px; flex-wrap:wrap;">
+        <div>
+          <div style="display:inline-flex; align-items:center; gap:8px; background:rgba(251,191,36,.15); border:1px solid rgba(251,191,36,.3); border-radius:50px; padding:6px 16px; margin-bottom:20px;">
+            <span style="color:#fbbf24; font-size:15px;">★</span>
+            <span style="font-size:12px; font-weight:700; color:#fbbf24; letter-spacing:.5px; text-transform:uppercase;">Offre exclusive</span>
+          </div>
+          <h2 style="font-size:clamp(22px,3vw,32px); font-weight:800; color:white; margin-bottom:12px; line-height:1.2;">Pack CV + LinkedIn<br><span style="color:#60a5fa;">— 15% de réduction</span></h2>
+          <p style="font-size:15px; color:rgba(255,255,255,.65); max-width:480px; line-height:1.65; margin-bottom:0;">Combinez la création de votre CV et l'optimisation de votre profil LinkedIn pour une présence professionnelle complète et cohérente.</p>
+        </div>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:12px; flex-shrink:0;">
+          <div style="text-align:center;">
+            <div style="font-size:13px; color:rgba(255,255,255,.5); text-decoration:line-through; margin-bottom:4px;"><?php echo (int)$price_cv + (int)$price_li; ?>€</div>
+            <div style="font-size:48px; font-weight:900; color:white; letter-spacing:-2px; line-height:1;"><?php echo round(((int)$price_cv + (int)$price_li) * 0.85); ?><span style="font-size:24px;">€</span></div>
+            <div style="font-size:12px; color:rgba(255,255,255,.5); margin-top:4px;">au lieu de <?php echo (int)$price_cv + (int)$price_li; ?>€</div>
+          </div>
+          <a href="<?php echo $contact_url; ?>" class="btn btn-white" style="white-space:nowrap;">Profiter du pack <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── QUELLE FORMULE ? ───────── -->
 <section class="comparison-section">
   <div class="container">
     <div class="reveal" style="text-align:center;">
-      <p class="section-label">Comparatif</p>
+      <p class="section-label">Trouver ma formule</p>
       <h2 class="section-title">Quelle formule est faite <span class="underline-blue">pour vous ?</span></h2>
-      <p class="section-subtitle" style="margin-top:16px;">Consultez le tableau comparatif pour choisir le service qui correspond le mieux à votre situation.</p>
+      <p class="section-subtitle" style="margin-top:16px;">Identifiez-vous dans l'un de ces profils pour trouver le service qui correspond à votre situation.</p>
     </div>
 
-    <div class="comparison-wrap reveal">
-      <table class="comparison-table">
-        <thead>
-          <tr>
-            <th style="width:36%;">Fonctionnalité</th>
-            <th class="th-service th-cv">CV &amp; LM</th>
-            <th class="th-service th-li">LinkedIn</th>
-            <th class="th-service th-coach">Coaching</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="cat-row"><td colspan="4">Documents &amp; contenu</td></tr>
-          <tr><td>Rédaction de contenu personnalisé</td><td><?php echo $check_yes; ?></td><td><?php echo $check_yes; ?></td><td><?php echo $check_no; ?></td></tr>
-          <tr><td>Design professionnel sur mesure</td><td><?php echo $check_yes; ?></td><td><?php echo $check_no; ?></td><td><?php echo $check_no; ?></td></tr>
-          <tr><td>Lettre de motivation incluse</td><td><?php echo $check_yes; ?></td><td><?php echo $check_no; ?></td><td><?php echo $check_no; ?></td></tr>
+    <div class="profiles-grid reveal">
 
-          <tr class="cat-row"><td colspan="4">Optimisation &amp; visibilité</td></tr>
-          <tr><td>Optimisation pour les ATS</td><td><?php echo $check_yes; ?></td><td><?php echo $check_yes; ?></td><td><?php echo $check_no; ?></td></tr>
-          <tr><td>Optimisation complète du profil LinkedIn</td><td><?php echo $check_no; ?></td><td><?php echo $check_yes; ?></td><td><?php echo $check_no; ?></td></tr>
-          <tr><td>Stratégie SEO &amp; mots-clés LinkedIn</td><td><?php echo $check_no; ?></td><td><?php echo $check_yes; ?></td><td><?php echo $check_no; ?></td></tr>
+      <div class="profile-card">
+        <div class="profile-icon" style="background:#eff6ff;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <div class="profile-tag" style="color:#2563eb; background:#eff6ff;">CV &amp; Lettre de motivation</div>
+        <h3 class="profile-title">Vous postulez et n'obtenez pas de réponses</h3>
+        <ul class="profile-symptoms">
+          <li>Votre CV date de plusieurs années</li>
+          <li>Vos candidatures restent sans réponse</li>
+          <li>Vous ne savez pas comment mettre en valeur votre parcours</li>
+        </ul>
+        <a href="<?php echo $cv_url; ?>" class="profile-cta">Voir le service CV <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
 
-          <tr class="cat-row"><td colspan="4">Coaching &amp; entretiens</td></tr>
-          <tr><td>Simulation d'entretien</td><td><?php echo $check_no; ?></td><td><?php echo $check_no; ?></td><td><?php echo $check_yes; ?></td></tr>
-          <tr><td>Rapport de coaching PDF</td><td><?php echo $check_no; ?></td><td><?php echo $check_no; ?></td><td><?php echo $check_yes; ?></td></tr>
-          <tr><td>Suivi personnalisé post-session</td><td><?php echo $check_no; ?></td><td><?php echo $check_no; ?></td><td><?php echo $check_yes; ?></td></tr>
+      <div class="profile-card profile-card-featured">
+        <div class="profile-icon" style="background:rgba(37,99,235,.12);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </div>
+        <div class="profile-tag" style="color:#2563eb; background:rgba(37,99,235,.1);">Profil LinkedIn</div>
+        <h3 class="profile-title">Vous voulez que les recruteurs viennent à vous</h3>
+        <ul class="profile-symptoms">
+          <li>Votre profil LinkedIn est vide ou peu attractif</li>
+          <li>Vous ne recevez aucune sollicitation de recruteurs</li>
+          <li>Vous souhaitez construire votre personal branding</li>
+        </ul>
+        <a href="<?php echo $li_url; ?>" class="profile-cta">Voir le service LinkedIn <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
 
-          <tr class="cat-row"><td colspan="4">Garanties</td></tr>
-          <tr><td>Révisions illimitées</td><td><?php echo $check_yes; ?></td><td><?php echo $check_yes; ?></td><td><?php echo $check_yes; ?></td></tr>
-          <tr><td>Livraison sous 72h</td><td><?php echo $check_yes; ?></td><td><?php echo $check_yes; ?></td><td><?php echo $check_no; ?></td></tr>
-          <tr><td>Satisfaction garantie</td><td><?php echo $check_yes; ?></td><td><?php echo $check_yes; ?></td><td><?php echo $check_yes; ?></td></tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td>Prêt à démarrer ?</td>
-            <td><a href="<?php echo $cv_url; ?>" class="pricing-cta-outline" style="max-width:160px;margin:0 auto;font-size:13px;padding:10px;">Voir le service</a></td>
-            <td><a href="<?php echo $li_url; ?>" class="pricing-cta-primary" style="max-width:160px;margin:0 auto;font-size:13px;padding:10px;">Voir le service</a></td>
-            <td><a href="<?php echo $coaching_url; ?>" class="pricing-cta-outline" style="max-width:160px;margin:0 auto;font-size:13px;padding:10px;">Voir le service</a></td>
-          </tr>
-        </tfoot>
-      </table>
+      <div class="profile-card">
+        <div class="profile-icon" style="background:#f5f3ff;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </div>
+        <div class="profile-tag" style="color:#7c3aed; background:#f5f3ff;">Coaching entretien</div>
+        <h3 class="profile-title">Vous avez des entretiens mais ne les convertissez pas</h3>
+        <ul class="profile-symptoms">
+          <li>Vous bloquez sur certaines questions</li>
+          <li>Vous manquez de confiance face aux recruteurs</li>
+          <li>Vous avez un entretien important dans les prochains jours</li>
+        </ul>
+        <a href="<?php echo $coaching_url; ?>" class="profile-cta profile-cta-purple">Voir le service Coaching <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+
     </div>
   </div>
 </section>
@@ -222,7 +297,7 @@ if (empty($testimonials)) $testimonials = $default_testi;
     <div class="reveal" style="text-align:center;">
       <p class="section-label">Comment ça marche</p>
       <h2 class="section-title">Un accompagnement en <span class="underline-blue">4 étapes</span></h2>
-      <p class="section-subtitle" style="margin-top:12px;">Simple, rapide et efficace — du premier contact à la livraison finale.</p>
+      <p class="section-subtitle" style="margin-top:12px;">Du premier échange à la livraison de vos documents, tout est pensé pour vous.</p>
     </div>
 
     <div class="process-steps">
@@ -323,20 +398,16 @@ if (empty($testimonials)) $testimonials = $default_testi;
 </section>
 
 <!-- ───────── CTA ───────── -->
-<section class="cta-banner" style="padding-bottom:80px;">
-  <div class="container">
-    <div class="cta-inner-card cta-dark reveal">
-      <div class="cta-inner">
-        <div class="cta-logo-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"/></svg>
-        </div>
-        <div class="cta-text">
-          <h2>Prêt à booster votre carrière ?</h2>
-          <p>Discutons de votre projet et trouvons ensemble la solution adaptée à vos objectifs.</p>
-        </div>
-        <a href="<?php echo $contact_url; ?>" class="btn btn-white">Nous contacter <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-      </div>
+<section class="cta-banner-fullwidth">
+  <div class="cta-inner" style="max-width:1140px; margin:0 auto;">
+    <div class="cta-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"/></svg>
     </div>
+    <div class="cta-text">
+      <h2>Prêt à booster votre carrière ?</h2>
+      <p>Discutons de votre projet et trouvons ensemble la solution adaptée à vos objectifs.</p>
+    </div>
+    <a href="<?php echo $contact_url; ?>" class="btn btn-white">Nous contacter <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
   </div>
 </section>
 

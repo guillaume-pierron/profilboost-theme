@@ -18,11 +18,6 @@ $formules_url = esc_url(get_permalink(get_page_by_path('formules')) ?: home_url(
 <section class="hero hero-inner-page">
   <div class="container">
     <div style="text-align:center; position:relative; z-index:1;">
-      <div class="breadcrumb">
-        <a href="<?php echo esc_url(home_url('/')); ?>">Accueil</a>
-        <span class="breadcrumb-sep">›</span>
-        <span class="breadcrumb-current">Contact</span>
-      </div>
       <h1 class="hero-title fade-up-2" style="white-space:normal;"><?php echo esc_html($hero_title); ?></h1>
       <p class="hero-subtitle fade-up-3" style="margin:0 auto 32px; max-width:520px;"><?php echo esc_html($hero_subtitle); ?></p>
       <div class="hero-badges fade-up-4">

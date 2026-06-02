@@ -48,12 +48,23 @@ document.addEventListener('DOMContentLoaded', function () {
       hamburger.classList.remove('open');
       mobileMenu.classList.remove('open');
       document.body.style.overflow = '';
+      const toggle = mobileMenu.querySelector('.mobile-services-toggle');
+      const sub = mobileMenu.querySelector('.mobile-services-sub');
+      if (toggle) toggle.classList.remove('open');
+      if (sub) sub.classList.remove('open');
     }
   };
 
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') window.closeMenu();
   });
+
+  window.toggleMobileServices = function (btn) {
+    const sub = btn.nextElementSibling;
+    const isOpen = sub.classList.contains('open');
+    btn.classList.toggle('open', !isOpen);
+    sub.classList.toggle('open', !isOpen);
+  };
 
   /* ── FAQ accordion ── */
   document.querySelectorAll('.faq-question').forEach(btn => {

@@ -6,23 +6,16 @@ $contact_url = esc_url(home_url('/contact'));
 $cv1 = pb_img('hero_cv_1', 'cv_1.png');
 $cv2 = pb_img('hero_cv_2', 'CV_2.png');
 $cv3 = pb_img('hero_cv_3', 'CV_3.png');
-$price = pb_field('service_price', '89');
+$price = pb_field('service_price', '79');
 ?>
 
 <!-- ───────── HERO ───────── -->
-<section class="hero" style="padding: 52px 0 80px;">
+<section class="hero" style="padding: 140px 0 80px;">
   <div class="container">
     <div class="hero-inner">
 
       <div class="hero-content">
-        <div class="breadcrumb">
-          <a href="<?php echo esc_url(home_url('/')); ?>">Accueil</a>
-          <span class="breadcrumb-sep">›</span>
-          <a href="<?php echo esc_url(home_url('/formules')); ?>">Formules</a>
-          <span class="breadcrumb-sep">›</span>
-          <span class="breadcrumb-current">CV &amp; LM</span>
-        </div>
-        <p class="hero-label fade-up">Service N°1</p>
+        <p class="hero-label fade-up">Notre service le plus demandé</p>
         <h1 class="hero-title fade-up-2">Création de CV &amp;<br>Lettre de Motivation</h1>
         <p class="hero-subtitle fade-up-3">
           Des documents percutants, modernes et optimisés ATS pour valoriser votre parcours et décrocher plus d'entretiens.
@@ -54,6 +47,7 @@ $price = pb_field('service_price', '89');
             Commander mon CV
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
+          <span class="hero-price-hint">À partir de <?php echo esc_html($price); ?>€</span>
         </div>
 
         <div class="hero-social-proof fade-up-4">
@@ -97,36 +91,69 @@ $price = pb_field('service_price', '89');
 
       <div class="service-feature-card reveal">
         <div class="service-feature-card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
         </div>
-        <h3>Design moderne<br>et professionnel</h3>
-        <p>Des modèles élégants, structurés et adaptés à votre secteur d'activité.</p>
+        <h3>Rédacteurs RH certifiés</h3>
+        <p>Chaque CV est rédigé par un expert RH maîtrisant les codes de votre secteur.</p>
       </div>
 
       <div class="service-feature-card reveal reveal-delay-1">
         <div class="service-feature-card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 005.64 5.64L1 10M23 14l-4.64 4.36A9 9 0 013.51 15"/></svg>
         </div>
-        <h3>Optimisation ATS</h3>
-        <p>Vos documents sont optimisés pour passer les filtres des logiciels de recrutement.</p>
+        <h3>Révisions illimitées</h3>
+        <p>On affine ensemble jusqu'à ce que le résultat vous convienne parfaitement.</p>
       </div>
 
       <div class="service-feature-card reveal reveal-delay-2">
         <div class="service-feature-card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
         </div>
-        <h3>Contenu impactant</h3>
-        <p>Mise en valeur de vos compétences et réalisations avec des formulations percutantes.</p>
+        <h3>Adapté à votre secteur</h3>
+        <p>Vocabulaire, mise en page et axes valorisés selon votre domaine d'activité.</p>
       </div>
 
       <div class="service-feature-card reveal reveal-delay-3">
         <div class="service-feature-card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
         </div>
-        <h3>Personnalisation totale</h3>
-        <p>Chaque document est 100% personnalisé selon votre parcours et vos objectifs.</p>
+        <h3>Satisfait ou remboursé</h3>
+        <p>Votre satisfaction est notre priorité. Si vous n'êtes pas satisfait, on vous rembourse.</p>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- ───────── STATS / POURQUOI ───────── -->
+<section class="service-why-section">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <h2 class="section-title">Ce qui rend nos CV <span class="underline-blue">uniques</span></h2>
+    </div>
+    <div class="stats-grid">
+      <?php
+      $stats = [
+        ['icon' => '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',
+         'value' => '100%', 'label' => 'Optimisation ATS garantie'],
+        ['icon' => '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>',
+         'value' => '4,9/5', 'label' => 'Note moyenne sur 200+ avis'],
+        ['icon' => '<path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>',
+         'value' => '+2 000', 'label' => 'CV créés depuis 2020'],
+        ['icon' => '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',
+         'value' => '72h', 'label' => 'Livraison garantie'],
+      ];
+      foreach ($stats as $i => $s) : ?>
+      <div class="stat-card reveal<?php echo $i > 0 ? ' reveal-delay-' . min($i, 3) : ''; ?>">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><?php echo $s['icon']; ?></svg>
+        </div>
+        <div class="stat-text">
+          <p class="stat-value"><?php echo esc_html($s['value']); ?></p>
+          <p class="stat-label"><?php echo esc_html($s['label']); ?></p>
+        </div>
+      </div>
+      <?php endforeach; ?>
     </div>
   </div>
 </section>
@@ -186,7 +213,7 @@ $price = pb_field('service_price', '89');
   <div class="container">
     <div class="reveal" style="text-align:center;">
       <h2 class="section-title">Notre processus en <span class="underline-blue">4 étapes</span></h2>
-      <p class="section-subtitle" style="margin-top:12px;">Simple, rapide et efficace.</p>
+      <p class="section-subtitle" style="margin-top:12px;">De l'échange initial à la livraison de vos fichiers, tout est pensé pour vous.</p>
     </div>
     <div class="process-steps">
       <?php
@@ -217,56 +244,43 @@ $price = pb_field('service_price', '89');
   </div>
 </section>
 
-<!-- ───────── STATS / POURQUOI ───────── -->
-<section class="service-why-section">
+<!-- ───────── TÉMOIGNAGE ───────── -->
+<section style="padding: 80px 0; background: #ffffff;">
   <div class="container">
-    <div class="reveal" style="text-align:center;">
-      <h2 class="section-title">Pourquoi choisir <span class="underline-blue">ProfilBoost</span> ?</h2>
+    <div class="reveal" style="text-align:center; margin-bottom:48px;">
+      <p class="section-label">Témoignage client</p>
+      <h2 class="section-title">Ce qu'ils disent <span class="underline-blue">après leur CV</span></h2>
     </div>
-    <div class="stats-grid">
-      <?php
-      $stats = [
-        ['icon' => '<path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>',
-         'value' => '+500', 'label' => 'clients accompagnés'],
-        ['icon' => '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>',
-         'value' => '4,9/5', 'label' => 'note moyenne sur 200+ avis'],
-        ['icon' => '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',
-         'value' => 'Expert', 'label' => 'sectorielle — spécialistes de votre domaine'],
-        ['icon' => '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',
-         'value' => '72h', 'label' => 'livraison rapide — sous 72h en moyenne'],
-      ];
-      foreach ($stats as $i => $s) : ?>
-      <div class="stat-card reveal<?php echo $i > 0 ? ' reveal-delay-' . min($i, 3) : ''; ?>">
-        <div class="stat-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><?php echo $s['icon']; ?></svg>
-        </div>
-        <div class="stat-text">
-          <p class="stat-value"><?php echo esc_html($s['value']); ?></p>
-          <p class="stat-label"><?php echo esc_html($s['label']); ?></p>
+    <div class="reveal" style="max-width:720px; margin:0 auto; background:white; border-radius:20px; padding:40px 48px; box-shadow:0 4px 32px rgba(37,99,235,.08); border:1.5px solid rgba(37,99,235,.12);">
+      <div style="color:#f59e0b; font-size:20px; letter-spacing:2px; margin-bottom:20px;">★★★★★</div>
+      <p style="font-size:18px; font-style:italic; color:#1e293b; line-height:1.7; margin-bottom:28px;">"Mon CV a été entièrement repensé en 48h. Après des mois sans réponse, j'ai décroché <strong>3 entretiens en une semaine</strong>. ProfilBoost a transformé ma recherche d'emploi."</p>
+      <div style="display:flex; align-items:center; gap:14px;">
+        <div style="width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,#3b82f6,#2563eb); display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:700; color:white; flex-shrink:0;">MC</div>
+        <div>
+          <p style="font-size:15px; font-weight:700; color:#0f172a; margin:0;">Marie-Claire Dupont</p>
+          <p style="font-size:13px; color:#64748b; margin:0;">Responsable Marketing · Paris</p>
         </div>
       </div>
-      <?php endforeach; ?>
     </div>
   </div>
 </section>
 
 <!-- ───────── CTA ───────── -->
-<section style="padding: 0 0 90px;">
-  <div class="container">
-    <div class="cta-inner-card cta-dark reveal">
-      <div class="cta-inner">
-        <div class="cta-logo-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"/></svg>
-        </div>
-        <div class="cta-text">
-          <h2>Prêt à booster votre candidature ?</h2>
-          <p>Confiez-nous la création de vos documents et augmentez vos chances de décrocher le poste que vous visez.</p>
-        </div>
-        <a href="<?php echo $contact_url; ?>" class="btn btn-white">
-          Commander mon CV
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
+<section class="cta-banner-fullwidth">
+  <div class="cta-inner" style="max-width:1140px; margin:0 auto;">
+    <div class="cta-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"/></svg>
+    </div>
+    <div class="cta-text">
+      <h2>Prêt à booster votre candidature ?</h2>
+      <p>Confiez-nous la création de vos documents et augmentez vos chances de décrocher le poste que vous visez.</p>
+    </div>
+    <div style="display:flex; flex-direction:column; align-items:flex-start; gap:10px; flex-shrink:0;">
+      <a href="<?php echo $contact_url; ?>" class="btn btn-white">
+        Commander mon CV
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="<?php echo esc_url(home_url('/formules')); ?>" style="font-size:13px; color:rgba(255,255,255,.65); text-decoration:none; text-align:center; width:100%;">Voir toutes les formules →</a>
     </div>
   </div>
 </section>
