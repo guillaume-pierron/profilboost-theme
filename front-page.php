@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<div class="pb-grad">
 <?php
 /* ── Helpers ── */
 $tpl = get_template_directory_uri();
@@ -96,22 +96,22 @@ $tav_classes = ['tav-1', 'tav-2', 'tav-3'];
         <p class="hero-subtitle fade-up-3"><?php echo esc_html($hero_subtitle); ?></p>
         <div class="hero-services fade-up-4">
           <div class="hero-service-item">
-            <div class="hero-service-icon hero-service-icon-1">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            <div class="hero-service-icon hero-service-icon-grad">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4cbdfa"/><stop offset="100%" stop-color="#058ed9"/></linearGradient></defs><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="url(#g1)"/><polyline points="14 2 14 8 20 8" stroke="url(#g1)"/><line x1="16" y1="13" x2="8" y2="13" stroke="url(#g1)"/><line x1="16" y1="17" x2="8" y2="17" stroke="url(#g1)"/></svg>
             </div>
             <span>CV &amp; Lettre de motivation</span>
           </div>
           <div class="hero-service-sep"></div>
           <div class="hero-service-item">
-            <div class="hero-service-icon hero-service-icon-2">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <div class="hero-service-icon hero-service-icon-grad">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4cbdfa"/><stop offset="100%" stop-color="#058ed9"/></linearGradient></defs><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" stroke="url(#g2)"/><rect x="2" y="9" width="4" height="12" stroke="url(#g2)"/><circle cx="4" cy="4" r="2" stroke="url(#g2)"/></svg>
             </div>
             <span>Profil LinkedIn</span>
           </div>
           <div class="hero-service-sep"></div>
           <div class="hero-service-item">
-            <div class="hero-service-icon hero-service-icon-3">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            <div class="hero-service-icon hero-service-icon-grad">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4cbdfa"/><stop offset="100%" stop-color="#058ed9"/></linearGradient></defs><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="url(#g3)"/></svg>
             </div>
             <span>Coaching entretien</span>
           </div>
@@ -148,9 +148,9 @@ $tav_classes = ['tav-1', 'tav-2', 'tav-3'];
     <div class="features-bar-inner">
       <?php
       $feat_icons = [
-        '<svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>',
-        '<svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>',
-        '<svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg>',
+        '<svg viewBox="0 0 24 24" fill="none" stroke="#4cbdfa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>',
+        '<svg viewBox="0 0 24 24" fill="none" stroke="#4cbdfa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>',
+        '<svg viewBox="0 0 24 24" fill="none" stroke="#4cbdfa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg>',
       ];
       $delays = ['', ' reveal-delay-1', ' reveal-delay-2'];
       foreach ($features as $i => $feat) : ?>
@@ -201,8 +201,10 @@ $tav_classes = ['tav-1', 'tav-2', 'tav-3'];
       </div>
       <div class="why-proof-divider"></div>
       <div class="why-proof-half">
-        <div class="why-stat-block-stars">★★★★★</div>
-        <div class="why-stat-block-num">4,9/5</div>
+        <div class="why-rating-row">
+          <span class="why-stat-block-stars">★★★★★</span>
+          <span class="why-stat-block-num">4,9/5</span>
+        </div>
         <div class="why-stat-block-label">basé sur 200+ avis vérifiés</div>
       </div>
     </div>
@@ -456,4 +458,5 @@ $recent_posts = get_posts(['numberposts' => 3, 'post_status' => 'publish']);
   </div>
 </section>
 
+</div>
 <?php get_footer(); ?>

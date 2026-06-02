@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<div class="pb-grad">
 <?php
 $tpl         = get_template_directory_uri();
 $contact_url = esc_url(home_url('/contact'));
@@ -305,4 +305,5 @@ $price = pb_field('service_price', '79');
   </div>
 </section>
 
+</div>
 <?php get_footer(); ?>

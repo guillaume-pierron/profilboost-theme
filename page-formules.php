@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<div class="pb-grad">
 <?php
 $hero_title    = pb_field('hero_title',    'Choisissez votre formule de succès');
 $hero_subtitle = pb_field('hero_subtitle', "Des prestations sur mesure pour valoriser votre profil, séduire les recruteurs et décrocher le poste que vous méritez.");
@@ -246,10 +246,10 @@ if (empty($testimonials)) $testimonials = $default_testi;
     <div class="profiles-grid reveal">
 
       <div class="profile-card">
-        <div class="profile-icon" style="background:#eff6ff;">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        <div class="profile-icon" style="background:#e0f5fe;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#4cbdfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
         </div>
-        <div class="profile-tag" style="color:#2563eb; background:#eff6ff;">CV &amp; Lettre de motivation</div>
+        <div class="profile-tag" style="color:#058ed9; background:#e0f5fe;">CV &amp; Lettre de motivation</div>
         <h3 class="profile-title">Vous postulez et n'obtenez pas de réponses</h3>
         <ul class="profile-symptoms">
           <li>Votre CV date de plusieurs années</li>
@@ -260,10 +260,10 @@ if (empty($testimonials)) $testimonials = $default_testi;
       </div>
 
       <div class="profile-card profile-card-featured">
-        <div class="profile-icon" style="background:rgba(37,99,235,.12);">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        <div class="profile-icon" style="background:rgba(76,189,250,.15);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#4cbdfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         </div>
-        <div class="profile-tag" style="color:#2563eb; background:rgba(37,99,235,.1);">Profil LinkedIn</div>
+        <div class="profile-tag" style="color:#058ed9; background:rgba(76,189,250,.12);">Profil LinkedIn</div>
         <h3 class="profile-title">Vous voulez que les recruteurs viennent à vous</h3>
         <ul class="profile-symptoms">
           <li>Votre profil LinkedIn est vide ou peu attractif</li>
@@ -274,10 +274,10 @@ if (empty($testimonials)) $testimonials = $default_testi;
       </div>
 
       <div class="profile-card">
-        <div class="profile-icon" style="background:#f5f3ff;">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        <div class="profile-icon" style="background:#e0f5fe;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#4cbdfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
         </div>
-        <div class="profile-tag" style="color:#7c3aed; background:#f5f3ff;">Coaching entretien</div>
+        <div class="profile-tag" style="color:#058ed9; background:#e0f5fe;">Coaching entretien</div>
         <h3 class="profile-title">Vous avez des entretiens mais ne les convertissez pas</h3>
         <ul class="profile-symptoms">
           <li>Vous bloquez sur certaines questions</li>
@@ -411,4 +411,5 @@ if (empty($testimonials)) $testimonials = $default_testi;
   </div>
 </section>
 
+</div>
 <?php get_footer(); ?>

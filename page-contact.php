@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<div class="pb-grad">
 <?php
 $hero_title    = pb_field('hero_title',    'Parlons de votre projet');
 $hero_subtitle = pb_field('hero_subtitle', "Une question, un devis ou simplement envie d'en savoir plus ? Notre équipe vous répond sous 24h, du lundi au vendredi.");
@@ -206,4 +206,5 @@ $formules_url = esc_url(get_permalink(get_page_by_path('formules')) ?: home_url(
   </div>
 </section>
 
+</div>
 <?php get_footer(); ?>

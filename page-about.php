@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<div class="pb-grad">
 <?php
 $hero_label    = pb_field('hero_label',    'Notre équipe');
 $hero_title    = pb_field('hero_title',    'Des experts passionnés à votre service');
@@ -263,4 +263,5 @@ if (empty($timeline)) $timeline = $default_timeline;
   </div>
 </section>
 
+</div>
 <?php get_footer(); ?>

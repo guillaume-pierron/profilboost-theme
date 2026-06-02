@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<div class="pb-grad">
 <?php
 $tpl         = get_template_directory_uri();
 $formules_url = esc_url(home_url('/formules'));
@@ -374,4 +374,5 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
+</div>
 <?php get_footer(); ?>

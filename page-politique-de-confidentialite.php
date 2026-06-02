@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<div class="pb-grad">
 
 <!-- ───────── HERO ───────── -->
 <section class="hero hero-inner-page">
@@ -129,4 +130,5 @@
   </div>
 </div>
 
+</div>
 <?php get_footer(); ?>

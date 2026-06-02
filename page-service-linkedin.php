@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<div class="pb-grad">
 <?php
 $contact_url = esc_url(home_url('/contact'));
 $price = pb_field('linkedin_price', '49');

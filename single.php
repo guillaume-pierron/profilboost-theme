@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<div class="pb-grad">
 <?php while (have_posts()) : the_post();
   $tpl         = get_template_directory_uri();
   $thumb       = get_the_post_thumbnail_url(null, 'large') ?: $tpl . '/assets/images/find_work.jpg';
@@ -247,4 +247,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <?php endwhile; ?>
 
+</div>
 <?php get_footer(); ?>
