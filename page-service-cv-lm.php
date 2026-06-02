@@ -275,7 +275,7 @@ $price = pb_field('service_price', '79');
       <div style="color:#f59e0b; font-size:20px; letter-spacing:2px; margin-bottom:20px;">★★★★★</div>
       <p style="font-size:18px; font-style:italic; color:#1e293b; line-height:1.7; margin-bottom:28px;">"Mon CV a été entièrement repensé en 48h. Après des mois sans réponse, j'ai décroché <strong>3 entretiens en une semaine</strong>. ProfilBoost a transformé ma recherche d'emploi."</p>
       <div style="display:flex; align-items:center; gap:14px;">
-        <div style="width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,#3b82f6,#2563eb); display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:700; color:white; flex-shrink:0;">MC</div>
+        <div style="width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,#4cbdfa,#058ed9); display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:700; color:white; flex-shrink:0;">MC</div>
         <div>
           <p style="font-size:15px; font-weight:700; color:#0f172a; margin:0;">Marie-Claire Dupont</p>
           <p style="font-size:13px; color:#64748b; margin:0;">Responsable Marketing · Paris</p>

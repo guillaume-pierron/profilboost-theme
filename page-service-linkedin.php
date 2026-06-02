@@ -276,7 +276,7 @@ $price = pb_field('linkedin_price', '49');
       <div style="color:#f59e0b; font-size:20px; letter-spacing:2px; margin-bottom:20px;">★★★★★</div>
       <p style="font-size:18px; font-style:italic; color:#1e293b; line-height:1.7; margin-bottom:28px;">"En deux semaines après l'optimisation de mon profil, j'ai reçu <strong>4 sollicitations de recruteurs</strong>. ProfilBoost a complètement transformé ma visibilité sur LinkedIn."</p>
       <div style="display:flex; align-items:center; gap:14px;">
-        <div style="width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,#38bdf8,#0284c7); display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:700; color:white; flex-shrink:0;">JR</div>
+        <div style="width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,#4cbdfa,#058ed9); display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:700; color:white; flex-shrink:0;">JR</div>
         <div>
           <p style="font-size:15px; font-weight:700; color:#0f172a; margin:0;">Julien Renaud</p>
           <p style="font-size:13px; color:#64748b; margin:0;">Ingénieur Commercial · Lyon</p>

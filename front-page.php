@@ -95,26 +95,26 @@ $tav_classes = ['tav-1', 'tav-2', 'tav-3'];
         </h1>
         <p class="hero-subtitle fade-up-3"><?php echo esc_html($hero_subtitle); ?></p>
         <div class="hero-services fade-up-4">
-          <div class="hero-service-item">
+          <a href="<?php echo esc_url(home_url('/service-cv-lm')); ?>" class="hero-service-item">
             <div class="hero-service-icon hero-service-icon-grad">
               <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4cbdfa"/><stop offset="100%" stop-color="#058ed9"/></linearGradient></defs><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="url(#g1)"/><polyline points="14 2 14 8 20 8" stroke="url(#g1)"/><line x1="16" y1="13" x2="8" y2="13" stroke="url(#g1)"/><line x1="16" y1="17" x2="8" y2="17" stroke="url(#g1)"/></svg>
             </div>
             <span>CV &amp; Lettre de motivation</span>
-          </div>
+          </a>
           <div class="hero-service-sep"></div>
-          <div class="hero-service-item">
+          <a href="<?php echo esc_url(home_url('/service-linkedin')); ?>" class="hero-service-item">
             <div class="hero-service-icon hero-service-icon-grad">
               <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4cbdfa"/><stop offset="100%" stop-color="#058ed9"/></linearGradient></defs><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" stroke="url(#g2)"/><rect x="2" y="9" width="4" height="12" stroke="url(#g2)"/><circle cx="4" cy="4" r="2" stroke="url(#g2)"/></svg>
             </div>
             <span>Profil LinkedIn</span>
-          </div>
+          </a>
           <div class="hero-service-sep"></div>
-          <div class="hero-service-item">
+          <a href="<?php echo esc_url(home_url('/service-coaching')); ?>" class="hero-service-item">
             <div class="hero-service-icon hero-service-icon-grad">
               <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4cbdfa"/><stop offset="100%" stop-color="#058ed9"/></linearGradient></defs><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="url(#g3)"/></svg>
             </div>
             <span>Coaching entretien</span>
-          </div>
+          </a>
         </div>
         <div class="hero-actions fade-up-4">
           <a href="<?php echo $contact_url; ?>" class="btn btn-primary">

@@ -39,7 +39,7 @@ $price = pb_field('coaching_price', '89');
         <div class="hero-social-proof fade-up-4">
           <div class="avatars">
             <div class="avatar"><div class="avatar-initials" style="background:linear-gradient(135deg,#60a5fa,#2563eb);">TL</div></div>
-            <div class="avatar"><div class="avatar-initials" style="background:linear-gradient(135deg,#f9a8d4,#ec4899);">SM</div></div>
+            <div class="avatar"><div class="avatar-initials" style="background:linear-gradient(135deg,#4cbdfa,#058ed9);">SM</div></div>
             <div class="avatar"><div class="avatar-initials" style="background:linear-gradient(135deg,#6ee7b7,#059669);">JR</div></div>
             <div class="avatar"><div class="avatar-initials" style="background:linear-gradient(135deg,#fcd34d,#f59e0b);">AL</div></div>
           </div>
@@ -305,7 +305,7 @@ $price = pb_field('coaching_price', '89');
       <div style="color:#f59e0b; font-size:20px; letter-spacing:2px; margin-bottom:20px;">★★★★★</div>
       <p style="font-size:18px; font-style:italic; color:#1e293b; line-height:1.7; margin-bottom:28px;">"Après deux séances, j'ai complètement transformé ma façon de répondre aux questions difficiles. J'ai décroché un poste dans une entreprise du CAC 40 <strong>dès mon 3e entretien</strong>. Le rapport de coaching m'a été précieux jusqu'au bout."</p>
       <div style="display:flex; align-items:center; gap:14px;">
-        <div style="width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,#f9a8d4,#ec4899); display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:700; color:white; flex-shrink:0;">SM</div>
+        <div style="width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,#4cbdfa,#058ed9); display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:700; color:white; flex-shrink:0;">SM</div>
         <div>
           <p style="font-size:15px; font-weight:700; color:#0f172a; margin:0;">Sophie Martin</p>
           <p style="font-size:13px; color:#64748b; margin:0;">Chef de Projet Digital · Paris</p>

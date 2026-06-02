@@ -47,7 +47,7 @@ function get_cat_info($post_id, $cat_css, $default) {
   <div class="container">
     <div class="hero-inner" style="text-align:center; position:relative; z-index:1;">
       <h1 class="hero-title fade-up-2" style="white-space:normal; font-size:clamp(30px,4.5vw,52px); margin-bottom:14px;">
-        Conseils, guides &amp; <span style="color:#60a5fa;">astuces carrière</span>
+        Conseils, guides &amp; <span style="background:linear-gradient(135deg,#4cbdfa,#058ed9);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">astuces carrière</span>
       </h1>
       <p class="hero-subtitle fade-up-3" style="margin:0 auto 20px; max-width:520px;">
         Des articles rédigés par nos experts RH pour vous aider à valoriser votre profil, préparer vos entretiens et booster votre carrière. Gratuitement.
@@ -106,7 +106,7 @@ function get_cat_info($post_id, $cat_css, $default) {
         <h2 class="featured-title"><?php echo get_the_title($featured_post->ID); ?></h2>
         <p class="featured-excerpt"><?php echo esc_html($ft_excerpt); ?></p>
         <div class="featured-author">
-          <div class="author-avatar" style="background:linear-gradient(135deg,#1e40af,#2563eb);"><?php echo esc_html($ft_initials); ?></div>
+          <div class="author-avatar" style="background:linear-gradient(135deg,#4cbdfa,#058ed9);"><?php echo esc_html($ft_initials); ?></div>
           <div>
             <div class="author-name"><?php echo esc_html($ft_author); ?></div>
             <div class="author-date"><?php echo esc_html($ft_date); ?></div>
@@ -173,7 +173,7 @@ function get_cat_info($post_id, $cat_css, $default) {
           <p class="article-excerpt"><?php echo esc_html($excerpt); ?></p>
           <div class="article-footer">
             <div class="article-author">
-              <div class="article-author-avatar" style="background:linear-gradient(135deg,#1e40af,#2563eb);"><?php echo esc_html($initials); ?></div>
+              <div class="article-author-avatar" style="background:linear-gradient(135deg,#4cbdfa,#058ed9);"><?php echo esc_html($initials); ?></div>
               <span class="article-author-name"><?php echo esc_html($author); ?></span>
             </div>
             <span class="article-date"><?php echo esc_html($date); ?></span>
@@ -212,7 +212,7 @@ function get_cat_info($post_id, $cat_css, $default) {
           <p class="article-excerpt"><?php echo esc_html($a['excerpt']); ?></p>
           <div class="article-footer">
             <div class="article-author">
-              <div class="article-author-avatar" style="background:linear-gradient(135deg,#1e40af,#2563eb);"><?php echo esc_html($initials); ?></div>
+              <div class="article-author-avatar" style="background:linear-gradient(135deg,#4cbdfa,#058ed9);"><?php echo esc_html($initials); ?></div>
               <span class="article-author-name"><?php echo esc_html($a['author']); ?></span>
             </div>
             <span class="article-date"><?php echo esc_html($a['date']); ?></span>
