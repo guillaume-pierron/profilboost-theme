@@ -18,7 +18,7 @@
       if ($logo_id) {
         echo wp_get_attachment_image($logo_id, 'full', false, ['class' => 'nav-logo-img', 'alt' => get_bloginfo('name')]);
       } else { ?>
-        <span><?php bloginfo('name'); ?></span>
+        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/profilboost_logo_sombre.svg'); ?>" alt="<?php bloginfo('name'); ?>" class="nav-logo-img" />
       <?php } ?>
     </a>
 

@@ -10,7 +10,7 @@
           if ($logo_id) {
             echo wp_get_attachment_image($logo_id, 'full', false, ['class' => 'footer-logo-img', 'alt' => get_bloginfo('name')]);
           } else { ?>
-            <span><?php bloginfo('name'); ?></span>
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/profilboost_logo_sombre.svg'); ?>" alt="<?php bloginfo('name'); ?>" class="footer-logo-img" />
           <?php } ?>
         </a>
         <p class="footer-brand-desc">
