@@ -94,25 +94,33 @@ $tav_classes = ['tav-1', 'tav-2', 'tav-3'];
           <?php } ?>
         </h1>
         <p class="hero-subtitle fade-up-3"><?php echo esc_html($hero_subtitle); ?></p>
+        <div class="hero-services fade-up-4">
+          <div class="hero-service-item">
+            <div class="hero-service-icon hero-service-icon-1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <span>CV &amp; Lettre de motivation</span>
+          </div>
+          <div class="hero-service-sep"></div>
+          <div class="hero-service-item">
+            <div class="hero-service-icon hero-service-icon-2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <span>Profil LinkedIn</span>
+          </div>
+          <div class="hero-service-sep"></div>
+          <div class="hero-service-item">
+            <div class="hero-service-icon hero-service-icon-3">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            </div>
+            <span>Coaching entretien</span>
+          </div>
+        </div>
         <div class="hero-actions fade-up-4">
           <a href="<?php echo $contact_url; ?>" class="btn btn-primary">
             <?php echo esc_html($hero_cta); ?>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
-        </div>
-        <div class="hero-social-proof fade-up-4">
-          <div class="avatars">
-            <div class="avatar"><div class="avatar-initials">MR</div></div>
-            <div class="avatar" style="background:linear-gradient(135deg,#a78bfa,#8b5cf6)"><div class="avatar-initials">SL</div></div>
-            <div class="avatar" style="background:linear-gradient(135deg,#34d399,#10b981)"><div class="avatar-initials">AB</div></div>
-            <div class="avatar" style="background:linear-gradient(135deg,#f87171,#ef4444)"><div class="avatar-initials">TC</div></div>
-          </div>
-          <span class="proof-text"><strong><?php echo esc_html($hero_stat1); ?></strong></span>
-          <div class="proof-sep"></div>
-          <div>
-            <div class="stars">★★★★★</div>
-            <div class="proof-rating"><strong><?php echo esc_html($hero_stat2); ?></strong></div>
-          </div>
         </div>
       </div>
 
@@ -160,26 +168,51 @@ $tav_classes = ['tav-1', 'tav-2', 'tav-3'];
 
 <!-- ───────── WHY SECTION ───────── -->
 <section class="why-section">
+  <div class="why-deco-circle-1"></div>
+  <div class="why-deco-circle-2"></div>
   <div class="container">
-    <h2 class="section-title reveal">Pourquoi <span class="underline-blue">choisir</span> ProfilBoost ?</h2>
+
+    <p class="why-label reveal">• Pourquoi choisir ProfilBoost ? •</p>
+    <h2 class="why-title reveal">Un CV, trois avantages<br>qui <span class="why-accent">changent tout.</span></h2>
+    <p class="why-subtitle reveal">Nous créons des CV percutants qui passent les filtres ATS<br>et <strong>séduisent</strong> les recruteurs.</p>
+
     <div class="why-grid">
       <?php
       $why_items = [
-        ['icon' => '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',                                                                              'title' => 'Expertise professionnelle',      'desc' => "Des rédacteurs RH certifiés, spécialisés par secteur d'activité."],
-        ['icon' => '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>',                 'title' => 'Différenciation et visibilité',  'desc' => "Un CV unique qui vous distingue et renforce votre positionnement."],
-        ['icon' => '<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>',                                                                                   'title' => 'Gain de temps et de confiance', 'desc' => "On s'occupe de tout, vous gagnez en sérénité et en impact."],
+        ['icon' => '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',                                              'num' => '01', 'title' => 'Expertise professionnelle',      'desc' => "Des rédacteurs RH certifiés, spécialisés par secteur d'activité.",    'link' => '/service-cv-lm'],
+        ['icon' => '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>', 'num' => '02', 'title' => 'Différenciation et visibilité',  'desc' => "Un CV unique qui vous distingue et renforce votre positionnement.",   'link' => '/service-cv-lm'],
+        ['icon' => '<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>',                                                  'num' => '03', 'title' => 'Gain de temps et de confiance', 'desc' => "On s'occupe de tout, vous gagnez en sérénité et en impact.",         'link' => '/service-coaching'],
       ];
       $delays = ['', ' reveal-delay-1', ' reveal-delay-2'];
       foreach ($why_items as $i => $item) : ?>
       <div class="why-card reveal<?php echo $delays[$i]; ?>">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><?php echo $item['icon']; ?></svg>
+        <div class="why-num-block">
+          <span class="why-num-text"><?php echo $item['num']; ?></span>
+          <div class="why-num-line"></div>
         </div>
         <h3><?php echo esc_html($item['title']); ?></h3>
         <p><?php echo esc_html($item['desc']); ?></p>
       </div>
       <?php endforeach; ?>
     </div>
+
+    <!-- Barre social proof -->
+    <div class="why-proof-bar reveal">
+      <div class="why-proof-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"/></svg>
+      </div>
+      <div class="why-proof-avatars">
+        <div class="why-avatar" style="background:linear-gradient(135deg,#3b82f6,#2563eb)">M</div>
+        <div class="why-avatar" style="background:linear-gradient(135deg,#ec4899,#be185d)">S</div>
+        <div class="why-avatar" style="background:linear-gradient(135deg,#10b981,#059669)">A</div>
+        <div class="why-avatar" style="background:linear-gradient(135deg,#f59e0b,#d97706)">T</div>
+      </div>
+      <span class="why-proof-text">+500 clients accompagnés</span>
+      <div class="why-proof-sep"></div>
+      <span class="why-proof-stars">★★★★★</span>
+      <span class="why-proof-rating">4,9/5 basé sur 200+ avis</span>
+    </div>
+
   </div>
 </section>
 
@@ -196,86 +229,64 @@ $tav_classes = ['tav-1', 'tav-2', 'tav-3'];
 
     <div class="svc-cards">
       <?php
-      $cv_url       = esc_url(get_permalink(get_page_by_path('service-cv-lm'))       ?: home_url('/service-cv-lm'));
-      $li_url       = esc_url(get_permalink(get_page_by_path('service-linkedin'))     ?: home_url('/service-linkedin'));
-      $coaching_url = esc_url(get_permalink(get_page_by_path('service-coaching'))     ?: home_url('/service-coaching'));
+      $cv_url       = esc_url(get_permalink(get_page_by_path('service-cv-lm'))   ?: home_url('/service-cv-lm'));
+      $li_url       = esc_url(get_permalink(get_page_by_path('service-linkedin')) ?: home_url('/service-linkedin'));
+      $coaching_url = esc_url(get_permalink(get_page_by_path('service-coaching')) ?: home_url('/service-coaching'));
+      $chk = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+      $arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
       ?>
 
       <!-- CV & LM -->
       <div class="svc-card reveal">
-        <div class="svc-card-head" style="background: linear-gradient(145deg, rgba(10,22,40,.72) 0%, rgba(30,64,175,.60) 100%), url('<?php echo $svc_img_cv; ?>') center/cover no-repeat;">
-          <span class="svc-num">Service N°1</span>
-          <div class="svc-head-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-          </div>
-          <p class="svc-head-title">Création de CV &amp;<br>Lettre de Motivation</p>
+        <div class="svc-card-top">
+          <span class="svc-badge svc-badge-1">Service 01</span>
+          <div class="svc-card-img" style="background-image: url('<?php echo $svc_img_cv; ?>');"></div>
         </div>
         <div class="svc-card-body">
-          <p class="svc-card-desc">Des documents percutants, modernes et optimisés ATS pour valoriser votre parcours et décrocher plus d'entretiens.</p>
+          <h3 class="svc-card-title">Création de CV &amp;<br>Lettre de motivation</h3>
+          <p class="svc-card-desc">Des documents percutants, modernes et adaptés à votre secteur.</p>
           <ul class="svc-list">
-            <?php foreach (['Design professionnel sur-mesure', 'Optimisation ATS garantie', 'Contenu convaincant et personnalisé', 'Livraison sous 72h, PDF & Word'] as $feat) : ?>
-            <li>
-              <div class="svc-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-              <?php echo esc_html($feat); ?>
-            </li>
+            <?php foreach (['Design professionnel sur-mesure', 'Optimisation ATS garantie', 'Livraison sous 72h'] as $feat) : ?>
+            <li><div class="svc-check svc-check-1"><?php echo $chk; ?></div><?php echo esc_html($feat); ?></li>
             <?php endforeach; ?>
           </ul>
-          <a href="<?php echo $cv_url; ?>" class="svc-card-link">
-            En savoir plus
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <a href="<?php echo $cv_url; ?>" class="svc-card-link">En savoir plus <?php echo $arrow; ?></a>
         </div>
       </div>
 
       <!-- LinkedIn -->
       <div class="svc-card reveal reveal-delay-1">
-        <div class="svc-card-head" style="background: linear-gradient(145deg, rgba(0,40,85,.72) 0%, rgba(10,102,194,.60) 100%), url('<?php echo $svc_img_li; ?>') center/cover no-repeat;">
-          <span class="svc-num">Service N°2</span>
-          <div class="svc-head-icon">
-            <svg viewBox="0 0 24 24" fill="white"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </div>
-          <p class="svc-head-title">Optimisation du<br>Profil LinkedIn</p>
+        <div class="svc-card-top">
+          <span class="svc-badge svc-badge-2">Service 02</span>
+          <div class="svc-card-img" style="background-image: url('<?php echo $svc_img_li; ?>');"></div>
         </div>
         <div class="svc-card-body">
-          <p class="svc-card-desc">Un profil LinkedIn optimisé pour renforcer votre e-réputation, être visible des recruteurs et attirer les bonnes opportunités.</p>
+          <h3 class="svc-card-title">Optimisation du<br>Profil LinkedIn</h3>
+          <p class="svc-card-desc">Un profil LinkedIn optimisé pour renforcer votre e-réputation et attirer les opportunités.</p>
           <ul class="svc-list">
-            <?php foreach (['Photo, bannière & titre percutants', 'Résumé optimisé SEO LinkedIn', 'Mots-clés stratégiques et visibilité accrue', 'Compétences & recommandations ciblées'] as $feat) : ?>
-            <li>
-              <div class="svc-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-              <?php echo esc_html($feat); ?>
-            </li>
+            <?php foreach (['Photo, bannière & titre percutants', 'Résumé optimisé SEO LinkedIn', 'Recommandations & compétences ciblées'] as $feat) : ?>
+            <li><div class="svc-check svc-check-2"><?php echo $chk; ?></div><?php echo esc_html($feat); ?></li>
             <?php endforeach; ?>
           </ul>
-          <a href="<?php echo $li_url; ?>" class="svc-card-link">
-            En savoir plus
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <a href="<?php echo $li_url; ?>" class="svc-card-link">En savoir plus <?php echo $arrow; ?></a>
         </div>
       </div>
 
       <!-- Coaching -->
       <div class="svc-card reveal reveal-delay-2">
-        <div class="svc-card-head" style="background: linear-gradient(145deg, rgba(26,10,42,.72) 0%, rgba(109,40,217,.60) 100%), url('<?php echo $svc_img_coaching; ?>') center/cover no-repeat;">
-          <span class="svc-num">Service N°3</span>
-          <div class="svc-head-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
-          </div>
-          <p class="svc-head-title">Coaching &amp;<br>Préparation entretien</p>
+        <div class="svc-card-top">
+          <span class="svc-badge svc-badge-3">Service 03</span>
+          <div class="svc-card-img" style="background-image: url('<?php echo $svc_img_coaching; ?>');"></div>
         </div>
         <div class="svc-card-body">
-          <p class="svc-card-desc">Entraînez-vous en conditions réelles avec un coach expert et abordez vos entretiens avec la confiance qui fait la différence.</p>
+          <h3 class="svc-card-title">Coaching &amp;<br>Préparation entretien</h3>
+          <p class="svc-card-desc">Préparez-vous en conditions réelles pour convaincre et décrocher le poste.</p>
           <ul class="svc-list">
-            <?php foreach (["Simulation d'entretien en conditions réelles", 'Méthode STAR & réponses structurées', 'Feedback détaillé & rapport personnalisé', 'Séance visio ou présentiel, résultats dès J+1'] as $feat) : ?>
-            <li>
-              <div class="svc-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-              <?php echo esc_html($feat); ?>
-            </li>
+            <?php foreach (["Simulation d'entretien en conditions réelles", 'Méthode STAR & réponses structurées', 'Gestion du stress et des objections'] as $feat) : ?>
+            <li><div class="svc-check svc-check-3"><?php echo $chk; ?></div><?php echo esc_html($feat); ?></li>
             <?php endforeach; ?>
           </ul>
-          <a href="<?php echo $coaching_url; ?>" class="svc-card-link">
-            En savoir plus
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <a href="<?php echo $coaching_url; ?>" class="svc-card-link">En savoir plus <?php echo $arrow; ?></a>
         </div>
       </div>
     </div>
