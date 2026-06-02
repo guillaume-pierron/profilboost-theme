@@ -109,7 +109,7 @@ $price = pb_field('linkedin_price', '49');
 </section>
 
 <!-- ───────── FEATURES (5 cartes) ───────── -->
-<section class="service-features-section">
+<section class="service-features-section" style="background: var(--gray-50);">
   <div class="container">
     <div class="reveal" style="text-align:center;">
       <h2 class="section-title">Un profil LinkedIn qui <span class="underline-blue">travaille pour vous</span></h2>

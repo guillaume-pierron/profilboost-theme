@@ -1441,7 +1441,7 @@ textarea.form-input { resize: vertical; min-height: 130px; }
 
 /* Hero article */
 .article-hero {
-  padding: 64px 0 80px; position: relative; overflow: hidden;
+  padding: 120px 0 80px; position: relative; overflow: hidden;
   background-size: cover; background-position: center;
 }
 .article-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 70% at 80% 40%, rgba(37,99,235,.15) 0%, transparent 70%); }
@@ -1885,7 +1885,7 @@ textarea.form-input { resize: vertical; min-height: 130px; }
 @media (max-width: 600px) {
   .related-grid { grid-template-columns: 1fr; }
   .stat-highlight { grid-template-columns: 1fr; }
-  .article-hero { padding: 40px 0 56px; }
+  .article-hero { padding: 104px 0 56px; }
   .articles-grid { grid-template-columns: 1fr; }
   .hero-search { padding: 6px; }
   .hero-search button { padding: 10px 14px; }
