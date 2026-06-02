@@ -1,12 +1,15 @@
 <?php get_header(); ?>
-<?php $contact_url = esc_url(home_url('/contact')); ?>
+<?php
+$contact_url = esc_url(home_url('/contact'));
+$price = pb_field('coaching_price', '89');
+?>
 
 <!-- ───────── HERO ───────── -->
 <section class="hero" style="padding: 140px 0 80px;">
   <div class="container">
     <div class="hero-inner">
       <div class="hero-content">
-        <p class="hero-label fade-up">Service N°3</p>
+        <p class="hero-label fade-up">Maîtrisez vos entretiens</p>
         <h1 class="hero-title fade-up-2">Coaching &amp;<br>Préparation <span style="color:var(--blue-light);">entretien</span></h1>
         <p class="hero-subtitle fade-up-3">Entraînez-vous en conditions réelles avec un coach expert et abordez vos entretiens avec la confiance et les techniques qui font la différence.</p>
 
@@ -23,10 +26,6 @@
             <span class="svc-hero-badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></span>
             Feedback personnalisé
           </span>
-          <span class="svc-hero-badge">
-            <span class="svc-hero-badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></span>
-            Confiance retrouvée
-          </span>
         </div>
 
         <div class="hero-actions fade-up-4">
@@ -34,6 +33,7 @@
             Réserver mon coaching
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
+          <span class="hero-price-hint">À partir de <?php echo esc_html($price); ?>€</span>
         </div>
         <div class="hero-social-proof fade-up-4">
           <div class="avatars">
@@ -123,7 +123,7 @@
 </section>
 
 <!-- ───────── FEATURES (4 cartes) ───────── -->
-<section class="service-features-section">
+<section class="service-features-section" style="background: #eef2ff;">
   <div class="container">
     <div class="reveal" style="text-align:center;">
       <h2 class="section-title">Un coaching complet pour <span class="underline-blue">réussir vos entretiens</span></h2>
@@ -243,7 +243,7 @@
   <div class="container">
     <div class="reveal" style="text-align:center;">
       <h2 class="section-title">Notre processus en <span class="underline-blue">4 étapes</span></h2>
-      <p class="section-subtitle" style="margin-top:12px;">Simple, rapide et efficace.</p>
+      <p class="section-subtitle" style="margin-top:12px;">Du premier échange au coaching personnalisé, chaque étape est conçue pour vous préparer au mieux au jour J.</p>
     </div>
     <div class="process-steps">
       <?php
@@ -275,10 +275,10 @@
     <div class="stats-grid">
       <?php
       $stats = [
-        ['icon' => '<circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>',           'value' => 'Coachs certifiés',   'label' => 'Spécialistes RH et développement'],
-        ['icon' => '<polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>',        'value' => '×3 d\'entretiens',   'label' => 'En moyenne après nos coachings'],
-        ['icon' => '<rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>', 'value' => 'Flexibilité totale', 'label' => 'Visio ou présentiel, vos horaires'],
-        ['icon' => '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',                         'value' => '1ère séance',        'label' => 'Des résultats concrets dès J+1'],
+        ['icon' => '<circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>',           'value' => '5 coachs',  'label' => 'Certifiés RH et développement personnel'],
+        ['icon' => '<polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>',        'value' => '×3',        'label' => 'd\'entretiens réussis en plus en moyenne après coaching'],
+        ['icon' => '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>', 'value' => '4,9/5',    'label' => 'Note moyenne sur 150+ avis clients'],
+        ['icon' => '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',                         'value' => '48h',       'label' => 'Pour réserver votre première séance'],
       ];
       foreach ($stats as $i => $s) : ?>
       <div class="stat-card reveal<?php echo $i > 0 ? ' reveal-delay-' . min($i,3) : ''; ?>">
@@ -289,6 +289,27 @@
         </div>
       </div>
       <?php endforeach; ?>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── TÉMOIGNAGE ───────── -->
+<section style="padding: 80px 0; background: #ffffff;">
+  <div class="container">
+    <div class="reveal" style="text-align:center; margin-bottom:48px;">
+      <p class="section-label">Témoignage client</p>
+      <h2 class="section-title">Ce qu'ils disent <span class="underline-blue">après leur coaching</span></h2>
+    </div>
+    <div class="reveal" style="max-width:720px; margin:0 auto; background:white; border-radius:20px; padding:40px 48px; box-shadow:0 4px 32px rgba(37,99,235,.08); border:1.5px solid rgba(37,99,235,.12);">
+      <div style="color:#f59e0b; font-size:20px; letter-spacing:2px; margin-bottom:20px;">★★★★★</div>
+      <p style="font-size:18px; font-style:italic; color:#1e293b; line-height:1.7; margin-bottom:28px;">"Après deux séances, j'ai complètement transformé ma façon de répondre aux questions difficiles. J'ai décroché un poste dans une entreprise du CAC 40 <strong>dès mon 3e entretien</strong>. Le rapport de coaching m'a été précieux jusqu'au bout."</p>
+      <div style="display:flex; align-items:center; gap:14px;">
+        <div style="width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,#f9a8d4,#ec4899); display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:700; color:white; flex-shrink:0;">SM</div>
+        <div>
+          <p style="font-size:15px; font-weight:700; color:#0f172a; margin:0;">Sophie Martin</p>
+          <p style="font-size:13px; color:#64748b; margin:0;">Chef de Projet Digital · Paris</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>

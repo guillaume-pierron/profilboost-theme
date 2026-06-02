@@ -1,12 +1,15 @@
 <?php get_header(); ?>
-<?php $contact_url = esc_url(home_url('/contact')); ?>
+<?php
+$contact_url = esc_url(home_url('/contact'));
+$price = pb_field('linkedin_price', '49');
+?>
 
 <!-- ───────── HERO ───────── -->
 <section class="hero" style="padding: 140px 0 80px;">
   <div class="container">
     <div class="hero-inner">
       <div class="hero-content">
-        <p class="hero-label fade-up">Service N°2</p>
+        <p class="hero-label fade-up">Devenez visible des recruteurs</p>
         <h1 class="hero-title fade-up-2">Optimisation du<br>Profil <span style="color:#38bdf8;">LinkedIn</span></h1>
         <p class="hero-subtitle fade-up-3">Un profil LinkedIn optimisé pour renforcer votre e-réputation, être visible des recruteurs et attirer les bonnes opportunités.</p>
 
@@ -23,10 +26,6 @@
             <span class="svc-hero-badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
             SEO LinkedIn
           </span>
-          <span class="svc-hero-badge">
-            <span class="svc-hero-badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></span>
-            Résultats mesurables
-          </span>
         </div>
 
         <div class="hero-actions fade-up-4">
@@ -34,6 +33,7 @@
             Optimiser mon profil LinkedIn
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
+          <span class="hero-price-hint">À partir de <?php echo esc_html($price); ?>€</span>
         </div>
         <div class="hero-social-proof fade-up-4">
           <div class="avatars">
@@ -214,7 +214,7 @@
   <div class="container">
     <div class="reveal" style="text-align:center;">
       <h2 class="section-title">Notre processus en <span class="underline-blue">4 étapes</span></h2>
-      <p class="section-subtitle" style="margin-top:12px;">Simple, rapide et efficace.</p>
+      <p class="section-subtitle" style="margin-top:12px;">De l'audit de votre profil à la mise en ligne, chaque étape est pensée pour maximiser votre impact sur LinkedIn.</p>
     </div>
     <div class="process-steps">
       <?php
@@ -246,7 +246,7 @@
     <div class="stats-grid">
       <?php
       $stats = [
-        ['icon' => '<polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>',       'value' => '+4x',   'label' => 'Visibilité LinkedIn accrue'],
+        ['icon' => '<polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>',       'value' => '+4x',   'label' => 'de visibilité en plus en moyenne après optimisation'],
         ['icon' => '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>', 'value' => '4,9/5', 'label' => 'Note moyenne sur 200+ avis'],
         ['icon' => '<path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>',   'value' => '+500',  'label' => 'Profils LinkedIn optimisés'],
         ['icon' => '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',                       'value' => '48h',   'label' => 'Livraison garantie'],
@@ -260,6 +260,27 @@
         </div>
       </div>
       <?php endforeach; ?>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── TÉMOIGNAGE ───────── -->
+<section style="padding: 80px 0; background: #ffffff;">
+  <div class="container">
+    <div class="reveal" style="text-align:center; margin-bottom:48px;">
+      <p class="section-label">Témoignage client</p>
+      <h2 class="section-title">Ce qu'ils disent <span class="underline-blue">après l'optimisation</span></h2>
+    </div>
+    <div class="reveal" style="max-width:720px; margin:0 auto; background:white; border-radius:20px; padding:40px 48px; box-shadow:0 4px 32px rgba(37,99,235,.08); border:1.5px solid rgba(37,99,235,.12);">
+      <div style="color:#f59e0b; font-size:20px; letter-spacing:2px; margin-bottom:20px;">★★★★★</div>
+      <p style="font-size:18px; font-style:italic; color:#1e293b; line-height:1.7; margin-bottom:28px;">"En deux semaines après l'optimisation de mon profil, j'ai reçu <strong>4 sollicitations de recruteurs</strong>. ProfilBoost a complètement transformé ma visibilité sur LinkedIn."</p>
+      <div style="display:flex; align-items:center; gap:14px;">
+        <div style="width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,#38bdf8,#0284c7); display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:700; color:white; flex-shrink:0;">JR</div>
+        <div>
+          <p style="font-size:15px; font-weight:700; color:#0f172a; margin:0;">Julien Renaud</p>
+          <p style="font-size:13px; color:#64748b; margin:0;">Ingénieur Commercial · Lyon</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>

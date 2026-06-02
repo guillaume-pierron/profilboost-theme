@@ -62,17 +62,37 @@ $price = pb_field('service_price', '79');
       </div>
 
       <div class="hero-visual">
-        <div class="deco-shape deco-triangle-1"></div>
-        <div class="deco-shape deco-triangle-2"></div>
-        <div class="deco-shape deco-circle-1"></div>
-        <div class="deco-shape deco-circle-2"></div>
-        <div class="deco-dots-grid">
-          <?php for ($i = 0; $i < 20; $i++) echo '<div class="deco-dot"></div>'; ?>
-        </div>
-        <div class="cv-fan">
-          <img src="<?php echo $cv1; ?>" alt="Exemple CV 1" class="cv-img cv-img-1" />
-          <img src="<?php echo $cv2; ?>" alt="Exemple CV 2" class="cv-img cv-img-2" />
-          <img src="<?php echo $cv3; ?>" alt="Exemple CV 3" class="cv-img cv-img-3" />
+        <div class="cv-mockup-wrap">
+          <div class="cv-mockup-glow"></div>
+          <img src="<?php echo $cv2; ?>" alt="Exemple de CV ProfilBoost" class="cv-mockup-doc" />
+
+          <div class="cv-badge-wrapper cv-badge-ats-wrap">
+            <div class="cv-mockup-badge">
+              <span class="cv-badge-dot cv-badge-dot--blue"></span>
+              ATS optimisé
+            </div>
+          </div>
+
+          <div class="cv-badge-wrapper cv-badge-design-wrap">
+            <div class="cv-mockup-badge">
+              <span class="cv-badge-dot cv-badge-dot--green"></span>
+              Design sur-mesure
+            </div>
+          </div>
+
+          <div class="cv-badge-wrapper cv-badge-livraison-wrap">
+            <div class="cv-mockup-badge">
+              <span class="cv-badge-dot cv-badge-dot--amber"></span>
+              Livraison en 72h
+            </div>
+          </div>
+
+          <div class="cv-badge-wrapper cv-badge-rating-wrap">
+            <div class="cv-mockup-badge">
+              <span class="cv-badge-star">★★★★★</span>
+              4,9/5
+            </div>
+          </div>
         </div>
       </div>
 
