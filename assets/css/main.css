@@ -777,6 +777,8 @@ body { padding-top: 0; }
 .team-avatar-wrap::after { content:''; position:absolute; bottom:-40px; right:-40px; width:120px; height:120px; border-radius:50%; background:rgba(255,255,255,.06); }
 .team-avatar-wrap::before { content:''; position:absolute; top:-25px; left:-25px; width:80px; height:80px; border-radius:50%; background:rgba(255,255,255,.05); }
 .team-avatar-photo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:top; z-index:1; }
+.ta-2 .team-avatar-photo { object-position: 50% 15%; }
+.ta-4 .team-avatar-photo { object-position: 50% 45%; transform: scale(1.3); transform-origin: 50% 45%; }
 .team-initials-circle { width: 80px; height: 80px; border-radius: 50%; background: rgba(255,255,255,.2); border: 3px solid rgba(255,255,255,.35); display: flex; align-items: center; justify-content: center; font-size: 26px; font-weight: 900; color: white; position: relative; z-index: 1; letter-spacing: -1px; }
 .team-body { padding: 20px 22px 24px; background: white; }
 .team-name { font-size: 15px; font-weight: 800; color: var(--gray-900); margin-bottom: 4px; }
@@ -1983,6 +1985,7 @@ textarea.form-input { resize: vertical; min-height: 130px; }
   .hiw-main-title { margin-bottom: 36px; }
   .footer-top { grid-template-columns: 1fr; }
   .team-grid-main { grid-template-columns: 1fr; }
+  .team-avatar-wrap { height: 280px; }
   .values-grid { grid-template-columns: 1fr; }
   .stats-mosaic { grid-template-columns: 1fr 1fr; }
   .process-steps { grid-template-columns: 1fr; }
