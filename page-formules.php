@@ -44,9 +44,9 @@ if (empty($faq_items)) $faq_items = $default_faq;
 
 /* Testimonials */
 $default_testi = [
-    ['name' => 'Thomas L.', 'role' => 'Chef de projet IT',   'initials' => 'TL', 'quote' => "Grâce à ProfilBoost, mon CV a retenu l'attention des recruteurs et j'ai décroché 3 entretiens en une semaine !", 'bg' => 'background: linear-gradient(135deg, #60a5fa, #2563eb);'],
-    ['name' => 'Sophie M.', 'role' => 'Marketing Manager',   'initials' => 'SM', 'quote' => "Un service professionnel, rapide et à l'écoute. Mon profil LinkedIn est maintenant beaucoup plus visible.", 'bg' => 'background: linear-gradient(135deg, #f9a8d4, #ec4899);'],
-    ['name' => 'Julien R.', 'role' => 'Ingénieur mécanique', 'initials' => 'JR', 'quote' => "La préparation aux entretiens m'a permis de gagner en confiance et d'obtenir le poste souhaité.", 'bg' => 'background: linear-gradient(135deg, #6ee7b7, #059669);'],
+    ['name' => 'Thomas L.', 'role' => 'Chef de projet IT',   'initials' => 'TL', 'quote' => "Grâce à ProfilBoost, mon CV a retenu l'attention des recruteurs et j'ai décroché 3 entretiens en une semaine !", 'bg' => 'background: linear-gradient(135deg, #4cbdfa, #058ed9);'],
+    ['name' => 'Sophie M.', 'role' => 'Marketing Manager',   'initials' => 'SM', 'quote' => "Un service professionnel, rapide et à l'écoute. Mon profil LinkedIn est maintenant beaucoup plus visible.", 'bg' => 'background: linear-gradient(135deg, #4cbdfa, #058ed9);'],
+    ['name' => 'Julien R.', 'role' => 'Ingénieur mécanique', 'initials' => 'JR', 'quote' => "La préparation aux entretiens m'a permis de gagner en confiance et d'obtenir le poste souhaité.", 'bg' => 'background: linear-gradient(135deg, #4cbdfa, #058ed9);'],
 ];
 $testimonials = [];
 if (function_exists('have_rows') && have_rows('testimonials')) {
@@ -209,7 +209,7 @@ if (empty($testimonials)) $testimonials = $default_testi;
 <!-- ───────── PACK COMBINÉ ───────── -->
 <section style="padding: 0 0 80px;">
   <div class="container">
-    <div class="reveal" style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #1d4ed8 100%); border-radius: 24px; padding: 48px 56px; position:relative; overflow:hidden;">
+    <div class="reveal" style="background: linear-gradient(160deg, #0E131F 0%, #394E7F 100%); border-radius: 24px; padding: 48px 56px; position:relative; overflow:hidden;">
       <div style="position:absolute; top:-40px; right:-40px; width:200px; height:200px; border-radius:50%; background:rgba(255,255,255,.04);"></div>
       <div style="position:absolute; bottom:-60px; left:-20px; width:160px; height:160px; border-radius:50%; background:rgba(255,255,255,.03);"></div>
       <div style="position:relative; z-index:1; display:flex; align-items:center; justify-content:space-between; gap:40px; flex-wrap:wrap;">

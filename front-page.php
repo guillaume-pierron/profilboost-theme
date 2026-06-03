@@ -90,7 +90,7 @@ $tav_classes = ['tav-1', 'tav-2', 'tav-3'];
           if ($custom_title) {
             echo nl2br(esc_html($custom_title));
           } else { ?>
-            Boostez votre profil et décrochez<br>le poste que vous <span class="accent">méritez</span>
+            Décrochez le poste que vous <span class="accent">méritez</span>
           <?php } ?>
         </h1>
         <p class="hero-subtitle fade-up-3"><?php echo esc_html($hero_subtitle); ?></p>
