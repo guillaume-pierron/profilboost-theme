@@ -26,7 +26,7 @@ $price = pb_field('service_price', '79');
             <span class="svc-hero-badge-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
             </span>
-            Design professionnel et sur-mesure
+            Design pro sur-mesure
           </span>
           <span class="svc-hero-badge">
             <span class="svc-hero-badge-icon">
@@ -38,7 +38,7 @@ $price = pb_field('service_price', '79');
             <span class="svc-hero-badge-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
             </span>
-            Contenu convaincant et personnalisé
+            Contenu personnalisé
           </span>
         </div>
 
@@ -47,7 +47,7 @@ $price = pb_field('service_price', '79');
             Commander mon CV
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
-          <span class="hero-price-hint">À partir de <?php echo esc_html($price); ?>€</span>
+          <a href="<?php echo esc_url(home_url('/formules/')); ?>" class="hero-price-hint">À partir de <?php echo esc_html($price); ?>€</a>
         </div>
 
         <div class="hero-social-proof fade-up-4">

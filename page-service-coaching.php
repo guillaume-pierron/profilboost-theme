@@ -17,7 +17,7 @@ $price = pb_field('coaching_price', '89');
         <div class="svc-hero-badges fade-up-3">
           <span class="svc-hero-badge">
             <span class="svc-hero-badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></span>
-            Simulations réelles
+            Simulations réelles d'entretien
           </span>
           <span class="svc-hero-badge">
             <span class="svc-hero-badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></span>
@@ -34,7 +34,7 @@ $price = pb_field('coaching_price', '89');
             Réserver mon coaching
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
-          <span class="hero-price-hint">À partir de <?php echo esc_html($price); ?>€</span>
+          <a href="<?php echo esc_url(home_url('/formules/')); ?>" class="hero-price-hint">À partir de <?php echo esc_html($price); ?>€</a>
         </div>
         <div class="hero-social-proof fade-up-4">
           <div class="avatars">
