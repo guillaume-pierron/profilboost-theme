@@ -95,21 +95,21 @@ $tav_classes = ['tav-1', 'tav-2', 'tav-3'];
         </h1>
         <p class="hero-subtitle fade-up-3"><?php echo esc_html($hero_subtitle); ?></p>
         <div class="hero-services fade-up-4">
-          <a href="<?php echo esc_url(home_url('/service-cv-lm')); ?>" class="hero-service-item">
+          <a href="<?php echo esc_url(home_url('/creation-cv')); ?>" class="hero-service-item">
             <div class="hero-service-icon hero-service-icon-grad">
               <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4cbdfa"/><stop offset="100%" stop-color="#058ed9"/></linearGradient></defs><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="url(#g1)"/><polyline points="14 2 14 8 20 8" stroke="url(#g1)"/><line x1="16" y1="13" x2="8" y2="13" stroke="url(#g1)"/><line x1="16" y1="17" x2="8" y2="17" stroke="url(#g1)"/></svg>
             </div>
             <span>CV &amp; Lettre de motivation</span>
           </a>
           <div class="hero-service-sep"></div>
-          <a href="<?php echo esc_url(home_url('/service-linkedin')); ?>" class="hero-service-item">
+          <a href="<?php echo esc_url(home_url('/optimisation-linkedin')); ?>" class="hero-service-item">
             <div class="hero-service-icon hero-service-icon-grad">
               <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4cbdfa"/><stop offset="100%" stop-color="#058ed9"/></linearGradient></defs><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" stroke="url(#g2)"/><rect x="2" y="9" width="4" height="12" stroke="url(#g2)"/><circle cx="4" cy="4" r="2" stroke="url(#g2)"/></svg>
             </div>
             <span>Profil LinkedIn</span>
           </a>
           <div class="hero-service-sep"></div>
-          <a href="<?php echo esc_url(home_url('/service-coaching')); ?>" class="hero-service-item">
+          <a href="<?php echo esc_url(home_url('/coaching-entretien')); ?>" class="hero-service-item">
             <div class="hero-service-icon hero-service-icon-grad">
               <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4cbdfa"/><stop offset="100%" stop-color="#058ed9"/></linearGradient></defs><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="url(#g3)"/></svg>
             </div>
@@ -179,9 +179,9 @@ $tav_classes = ['tav-1', 'tav-2', 'tav-3'];
     <div class="why-grid">
       <?php
       $why_items = [
-        ['icon' => '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',                                              'stat' => '3x',  'title' => "plus d'entretiens",       'desc' => "Nos clients décrochent en moyenne 3x plus d'entretiens dans les 30 jours suivant leur accompagnement.", 'link' => '/service-cv-lm'],
-        ['icon' => '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>', 'stat' => '+4x', 'title' => "de visibilité LinkedIn",  'desc' => "Un profil LinkedIn optimisé multiplie par 4 les sollicitations de recruteurs en moins d'un mois.",      'link' => '/service-cv-lm'],
-        ['icon' => '<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>',                                                  'stat' => '72h', 'title' => "livraison garantie",        'desc' => "Vos documents prêts en 3 jours ouvrés, avec une garantie satisfait ou remboursé sans conditions.",      'link' => '/service-coaching'],
+        ['icon' => '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',                                              'stat' => '3x',  'title' => "plus d'entretiens",       'desc' => "Nos clients décrochent en moyenne 3x plus d'entretiens dans les 30 jours suivant leur accompagnement.", 'link' => '/creation-cv'],
+        ['icon' => '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>', 'stat' => '+4x', 'title' => "de visibilité LinkedIn",  'desc' => "Un profil LinkedIn optimisé multiplie par 4 les sollicitations de recruteurs en moins d'un mois.",      'link' => '/creation-cv'],
+        ['icon' => '<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>',                                                  'stat' => '72h', 'title' => "livraison garantie",        'desc' => "Vos documents prêts en 3 jours ouvrés, avec une garantie satisfait ou remboursé sans conditions.",      'link' => '/coaching-entretien'],
       ];
       $delays = ['', ' reveal-delay-1', ' reveal-delay-2'];
       foreach ($why_items as $i => $item) : ?>
@@ -225,9 +225,9 @@ $tav_classes = ['tav-1', 'tav-2', 'tav-3'];
 
     <div class="svc-cards">
       <?php
-      $cv_url       = esc_url(get_permalink(get_page_by_path('service-cv-lm'))   ?: home_url('/service-cv-lm'));
-      $li_url       = esc_url(get_permalink(get_page_by_path('service-linkedin')) ?: home_url('/service-linkedin'));
-      $coaching_url = esc_url(get_permalink(get_page_by_path('service-coaching')) ?: home_url('/service-coaching'));
+      $cv_url       = esc_url(get_permalink(get_page_by_path('creation-cv'))   ?: home_url('/creation-cv'));
+      $li_url       = esc_url(get_permalink(get_page_by_path('optimisation-linkedin')) ?: home_url('/optimisation-linkedin'));
+      $coaching_url = esc_url(get_permalink(get_page_by_path('coaching-entretien')) ?: home_url('/coaching-entretien'));
       $chk = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
       $arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
       ?>
@@ -368,7 +368,7 @@ $tav_classes = ['tav-1', 'tav-2', 'tav-3'];
 
 <!-- ───────── RESOURCES PREVIEW ───────── -->
 <?php
-$res_url = esc_url(get_permalink(get_page_by_path('ressources')) ?: home_url('/ressources'));
+$res_url = esc_url(get_permalink(get_page_by_path('blog')) ?: home_url('/blog'));
 $recent_posts = get_posts(['numberposts' => 3, 'post_status' => 'publish']);
 ?>
 <section class="res-preview-section">

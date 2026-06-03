@@ -66,21 +66,21 @@ function profilboost_fallback_menu() {
     $active = ($uri === parse_url(home_url('/'), PHP_URL_PATH)) ? ' class="active"' : '';
     echo '<li><a href="' . esc_url(home_url('/')) . '"' . $active . '>Accueil</a></li>';
     // Services dropdown
-    $svc_paths = ['/service-cv-lm', '/service-linkedin', '/service-coaching'];
+    $svc_paths = ['/creation-cv', '/optimisation-linkedin', '/coaching-entretien'];
     $svc_active = '';
     foreach ($svc_paths as $p) { if (strpos($uri, $p) !== false) { $svc_active = ' class="active"'; break; } }
     echo '<li class="nav-has-dropdown">';
     echo '<a href="#"' . $svc_active . ' class="nav-dropdown-toggle">Services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></a>';
     echo '<div class="nav-dropdown"><div class="nav-dropdown-inner">';
-    echo '<a href="' . esc_url(home_url('/service-cv-lm')) . '"><span class="nav-dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="url(#grad-nav)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="grad-nav" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4cbdfa"/><stop offset="100%" stop-color="#058ed9"/></linearGradient></defs><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>CV &amp; Lettre de motivation</a>';
-    echo '<a href="' . esc_url(home_url('/service-linkedin')) . '"><span class="nav-dropdown-icon"><svg viewBox="0 0 24 24" fill="url(#grad-nav2)" stroke="none"><defs><linearGradient id="grad-nav2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4cbdfa"/><stop offset="100%" stop-color="#058ed9"/></linearGradient></defs><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></span>Profil LinkedIn</a>';
-    echo '<a href="' . esc_url(home_url('/service-coaching')) . '"><span class="nav-dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="url(#grad-nav3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="grad-nav3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4cbdfa"/><stop offset="100%" stop-color="#058ed9"/></linearGradient></defs><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></span>Coaching entretien</a>';
+    echo '<a href="' . esc_url(home_url('/creation-cv')) . '"><span class="nav-dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="url(#grad-nav)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="grad-nav" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4cbdfa"/><stop offset="100%" stop-color="#058ed9"/></linearGradient></defs><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>CV &amp; Lettre de motivation</a>';
+    echo '<a href="' . esc_url(home_url('/optimisation-linkedin')) . '"><span class="nav-dropdown-icon"><svg viewBox="0 0 24 24" fill="url(#grad-nav2)" stroke="none"><defs><linearGradient id="grad-nav2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4cbdfa"/><stop offset="100%" stop-color="#058ed9"/></linearGradient></defs><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></span>Profil LinkedIn</a>';
+    echo '<a href="' . esc_url(home_url('/coaching-entretien')) . '"><span class="nav-dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="url(#grad-nav3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="grad-nav3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4cbdfa"/><stop offset="100%" stop-color="#058ed9"/></linearGradient></defs><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></span>Coaching entretien</a>';
     echo '</div></div></li>';
     // Autres pages
     $pages = [
         home_url('/formules') => 'Formules',
-        home_url('/about') => 'Qui sommes-nous',
-        home_url('/ressources') => 'Blog',
+        home_url('/qui-sommes-nous') => 'Qui sommes-nous',
+        home_url('/blog') => 'Blog',
     ];
     foreach ($pages as $url => $label) {
         $active = ($uri === parse_url($url, PHP_URL_PATH)) ? ' class="active"' : '';
@@ -91,13 +91,13 @@ function profilboost_fallback_mobile_menu() {
     echo '<a href="' . esc_url(home_url('/')) . '" onclick="closeMenu()">Accueil</a>';
     echo '<button class="mobile-services-toggle" onclick="toggleMobileServices(this)" type="button">Services <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>';
     echo '<div class="mobile-services-sub">';
-    echo '<a href="' . esc_url(home_url('/service-cv-lm')) . '" onclick="closeMenu()">📄 CV &amp; Lettre de motivation</a>';
-    echo '<a href="' . esc_url(home_url('/service-linkedin')) . '" onclick="closeMenu()">💼 Profil LinkedIn</a>';
-    echo '<a href="' . esc_url(home_url('/service-coaching')) . '" onclick="closeMenu()">🎯 Coaching entretien</a>';
+    echo '<a href="' . esc_url(home_url('/creation-cv')) . '" onclick="closeMenu()">📄 CV &amp; Lettre de motivation</a>';
+    echo '<a href="' . esc_url(home_url('/optimisation-linkedin')) . '" onclick="closeMenu()">💼 Profil LinkedIn</a>';
+    echo '<a href="' . esc_url(home_url('/coaching-entretien')) . '" onclick="closeMenu()">🎯 Coaching entretien</a>';
     echo '</div>';
     echo '<a href="' . esc_url(home_url('/formules')) . '" onclick="closeMenu()">Formules</a>';
-    echo '<a href="' . esc_url(home_url('/about')) . '" onclick="closeMenu()">Qui sommes-nous</a>';
-    echo '<a href="' . esc_url(home_url('/ressources')) . '" onclick="closeMenu()">Blog</a>';
+    echo '<a href="' . esc_url(home_url('/qui-sommes-nous')) . '" onclick="closeMenu()">Qui sommes-nous</a>';
+    echo '<a href="' . esc_url(home_url('/blog')) . '" onclick="closeMenu()">Blog</a>';
 }
 
 /* ─── ACF OPTIONS PAGE ──────────────────────────────────── */
@@ -220,7 +220,7 @@ add_action('acf/init', function () {
     ]);
 
     /* ══════════════════════════════════════════════════════
-       PAGE À PROPOS (slug: about)
+       PAGE À PROPOS (slug: qui-sommes-nous)
        ══════════════════════════════════════════════════════ */
     acf_add_local_field_group([
         'key'   => 'group_about',
@@ -277,7 +277,7 @@ add_action('acf/init', function () {
             ],
         ],
         'location' => [
-            [['param' => 'page_slug', 'operator' => '==', 'value' => 'about']],
+            [['param' => 'page_slug', 'operator' => '==', 'value' => 'qui-sommes-nous']],
         ],
     ]);
 
@@ -339,7 +339,7 @@ add_action('acf/init', function () {
     ]);
 
     /* ══════════════════════════════════════════════════════
-       PAGES SERVICES (slugs: service-cv-lm, service-linkedin, service-coaching)
+       PAGES SERVICES (slugs: creation-cv, optimisation-linkedin, coaching-entretien)
        ══════════════════════════════════════════════════════ */
     acf_add_local_field_group([
         'key'   => 'group_service',
@@ -366,9 +366,9 @@ add_action('acf/init', function () {
             ],
         ],
         'location' => [
-            [['param' => 'page_slug', 'operator' => '==', 'value' => 'service-cv-lm']],
-            [['param' => 'page_slug', 'operator' => '==', 'value' => 'service-linkedin']],
-            [['param' => 'page_slug', 'operator' => '==', 'value' => 'service-coaching']],
+            [['param' => 'page_slug', 'operator' => '==', 'value' => 'creation-cv']],
+            [['param' => 'page_slug', 'operator' => '==', 'value' => 'optimisation-linkedin']],
+            [['param' => 'page_slug', 'operator' => '==', 'value' => 'coaching-entretien']],
         ],
     ]);
 

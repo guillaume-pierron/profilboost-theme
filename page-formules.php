@@ -8,9 +8,9 @@ $price_cv       = pb_field('price_cv',       '79');
 $price_li       = pb_field('price_li',       '69');
 $price_coaching = pb_field('price_coaching', '99');
 
-$cv_url       = esc_url(get_permalink(get_page_by_path('service-cv-lm'))   ?: home_url('/service-cv-lm'));
-$li_url       = esc_url(get_permalink(get_page_by_path('service-linkedin')) ?: home_url('/service-linkedin'));
-$coaching_url = esc_url(get_permalink(get_page_by_path('service-coaching')) ?: home_url('/service-coaching'));
+$cv_url       = esc_url(get_permalink(get_page_by_path('creation-cv'))   ?: home_url('/creation-cv'));
+$li_url       = esc_url(get_permalink(get_page_by_path('optimisation-linkedin')) ?: home_url('/optimisation-linkedin'));
+$coaching_url = esc_url(get_permalink(get_page_by_path('coaching-entretien')) ?: home_url('/coaching-entretien'));
 $contact_url  = esc_url(get_permalink(get_page_by_path('contact'))          ?: home_url('/contact'));
 
 $svc_img_cv       = pb_img('service_img_cv',       'Service_n_1.jpg');

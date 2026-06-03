@@ -11,7 +11,7 @@
   $initials    = implode('', array_map(fn($w) => strtoupper($w[0]), array_slice(explode(' ', $author_name), 0, 2)));
   $read_time   = ceil(str_word_count(strip_tags(get_the_content())) / 200); /* ~200 mots/min */
   $formules_url = esc_url(home_url('/formules'));
-  $ressources_url = esc_url(home_url('/ressources'));
+  $ressources_url = esc_url(home_url('/blog'));
 
   /* Générer le sommaire depuis les balises H2 du contenu */
   $content_raw = get_the_content();

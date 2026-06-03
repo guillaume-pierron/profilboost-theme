@@ -37,8 +37,8 @@
         <ul class="footer-col-links">
           <li><a href="<?php echo esc_url(home_url('/')); ?>">Accueil</a></li>
           <li><a href="<?php echo esc_url(home_url('/formules')); ?>">Formules</a></li>
-          <li><a href="<?php echo esc_url(home_url('/about')); ?>">Qui sommes-nous</a></li>
-          <li><a href="<?php echo esc_url(home_url('/ressources')); ?>">Ressources</a></li>
+          <li><a href="<?php echo esc_url(home_url('/qui-sommes-nous')); ?>">Qui sommes-nous</a></li>
+          <li><a href="<?php echo esc_url(home_url('/blog')); ?>">Ressources</a></li>
           <li><a href="<?php echo esc_url(home_url('/contact')); ?>">Contact</a></li>
         </ul>
       </div>
@@ -46,19 +46,19 @@
       <div>
         <h4 class="footer-col-title">Nos services</h4>
         <ul class="footer-col-links">
-          <li><a href="<?php echo esc_url(home_url('/service-cv-lm')); ?>">Création de CV &amp; LM</a></li>
-          <li><a href="<?php echo esc_url(home_url('/service-linkedin')); ?>">Optimisation LinkedIn</a></li>
-          <li><a href="<?php echo esc_url(home_url('/service-coaching')); ?>">Coaching entretien</a></li>
+          <li><a href="<?php echo esc_url(home_url('/creation-cv')); ?>">Création de CV &amp; LM</a></li>
+          <li><a href="<?php echo esc_url(home_url('/optimisation-linkedin')); ?>">Optimisation LinkedIn</a></li>
+          <li><a href="<?php echo esc_url(home_url('/coaching-entretien')); ?>">Coaching entretien</a></li>
         </ul>
       </div>
 
       <div>
         <h4 class="footer-col-title">Ressources</h4>
         <ul class="footer-col-links">
-          <li><a href="<?php echo esc_url(home_url('/ressources')); ?>">Conseils carrière</a></li>
-          <li><a href="<?php echo esc_url(home_url('/ressources')); ?>">Guides gratuits</a></li>
-          <li><a href="<?php echo esc_url(home_url('/ressources')); ?>">Blog</a></li>
-          <li><a href="<?php echo esc_url(home_url('/ressources')); ?>">FAQ</a></li>
+          <li><a href="<?php echo esc_url(home_url('/blog')); ?>">Conseils carrière</a></li>
+          <li><a href="<?php echo esc_url(home_url('/blog')); ?>">Guides gratuits</a></li>
+          <li><a href="<?php echo esc_url(home_url('/blog')); ?>">Blog</a></li>
+          <li><a href="<?php echo esc_url(home_url('/blog')); ?>">FAQ</a></li>
         </ul>
       </div>
 
